@@ -1,0 +1,16 @@
+﻿.env
+
+telegram_monitor.session
+
+*.pyc
+
+/data/aggregated
+/data/classified_posts
+/data/narrative
+/data/raw_posts
+/data/reports
+/data/regression_checks
+/data/audited_posts
+/data/aggregated_stats
+
+__pycache__/

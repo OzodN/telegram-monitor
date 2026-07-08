@@ -1,0 +1,4280 @@
+﻿{
+  "sections": [
+    {
+      "page_width_in": 11.693,
+      "page_height_in": 8.268,
+      "left_margin_in": 0.787,
+      "right_margin_in": 0.787,
+      "top_margin_in": 0.394,
+      "bottom_margin_in": 0.59,
+      "header_distance_in": 0.492,
+      "footer_distance_in": 0.492
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "style": "Normal",
+      "alignment": "None",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": null,
+      "text": "01-03/80",
+      "runs": [
+        {
+          "text": "01-03/",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "80",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "style": "Normal",
+      "alignment": "None",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": null,
+      "text": "29.06.2026 йил",
+      "runs": [
+        {
+          "text": "29",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": ".0",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "6",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": ".2026 йил",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "style": "Normal",
+      "alignment": "CENTER (1)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": null,
+      "text": "Халқ депутатлари Наманган вилояти, туман ва шаҳар Кенгашларининг расмий телеграм каналларида",
+      "runs": [
+        {
+          "text": "Халқ депутатлари ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "Наманган вилояти, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "туман",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": " ва шаҳар",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": " Кенгашлари",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "нинг",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": " расмий телеграм каналлари",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "да ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "style": "Normal",
+      "alignment": "CENTER (1)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": null,
+      "text": "эълон қилинган материаллар бўйича",
+      "runs": [
+        {
+          "text": "эълон қилинган материаллар",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": " бўйича ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "style": "Normal",
+      "alignment": "CENTER (1)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": null,
+      "text": "ҲАФТАЛИК МАЪЛУМОТ",
+      "runs": [
+        {
+          "text": "ҲАФТАЛИК МАЪЛУМОТ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "style": "Normal",
+      "alignment": "CENTER (1)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": null,
+      "text": "(22 — 28.06.2026 йил)",
+      "runs": [
+        {
+          "text": "(",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "22",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "—",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "2",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "8",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": ".0",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": "6",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        },
+        {
+          "text": ".2026 йил)",
+          "bold": null,
+          "italic": true,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 12.0
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "Изоҳ:",
+      "runs": [
+        {
+          "text": "Изоҳ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ":",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "style": "List Paragraph",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "2026 йил 22 – 28 июнь оралиғида Наманган вилояти, туман ва шаҳар маҳаллий Кенгашларининг Telegram каналларида жами 898 та пост эълон қилинган.",
+      "runs": [
+        {
+          "text": "2026",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "йил ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "22",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "– ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "2",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "8",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "июнь",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "оралиғида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Наманган вилояти",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " туман ва шаҳар маҳаллий Кенгашларининг Telegram каналларида жами ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "898 ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " пост эълон қилинган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "2. Кенгаш фаолиятига бевосита боғлиқ бўлмаган 10 та пост кузатилган. Хусусан, Янги Наманган, Чортоқ, Мингбулоқ ва Давлатобод тумани Кенгашлари каналида сувни ифлослантириш бўйича жавобгарлик мавжудлиги, болани давлат боғчаларига қўйишдаги имтиёзлар  тўғрисида, Уйчи тумани Кенгаши каналида ту-илган кун табриги, Уйчи, Чортоқ ва Янгиқўрғон тумани Кенгашлари каналида Матбуот ва оммавий ахборот воситалари ходимлари куни муносабати билан байрам табриги тўғрисидаги постлар эълон қилинган.",
+      "runs": [
+        {
+          "text": "2. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгаш",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "фаолиятига",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "бевосита",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "боғлиқ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "бўлмаган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "10",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "кузатил",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ".",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Хусусан, ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Янги",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Мингбулоқ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Давлатобод ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "туман",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Кенгаш",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и каналида ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "сувни ифлослантириш бўйича жавобгарлик мавжудлиги, болани давлат боғчаларига қўйишдаги имтиёзлар  тўғрисида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уйчи",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани Кенгаши каналида ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ту-илган кун табриги",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уйчи",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Янгиқўрғон ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани Кенгаш",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и каналида ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Матбуот ва оммавий ахборот воситалари ходимлари куни муносабати билан байрам табриги",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тўғрисида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ги ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "эълон қилинган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "style": "List Paragraph",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "Ҳоким, Кенгаш раиси ва котибият мудирининг депутат сифатида сайлов округларидаги фаолиятига оид 107 та материал эълон қилинган. Хусусан, Кенгаш раиси фаолияти - Наманган вилояти, Наманган шаҳар, Мингбулоқ, Норин, Поп, Наманган, Учқўрғон, Тўрақўрғон, Чуст, Чортоқ тумани Кенгашлари каналларида; Котибият мудири фаолияти - Наманган вилояти, Наманган шаҳар, Наманган, Мингбулоқ, Косонсой, Тўрақўрғон, Учқўрғон, Уйчи, Чуст, Чортоқ, Янгиқўрғон тумани Кенгашлари каналларида; ҳокимларнинг депутатлик фаолияти - Наманган шаҳар, Поп, Чортоқ, Уйчи, Янги Наманган тумани Кенгашлари каналларида ёритилган.",
+      "runs": [
+        {
+          "text": "Ҳоким",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгаш",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "раиси",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "котибият",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "мудирининг",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " депутат ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "сифатида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "сайлов",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "округларидаги",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "фаолиятига",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "оид",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "107",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та материал ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "эълон",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "қилинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Хусусан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгаш раиси фаолияти - ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган вилояти, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган шаҳар, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Мингбулоқ, Норин, Поп, Наманган, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уч",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "қў",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "р",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ғ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "он, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Тўрақўрғон, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чуст, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани Кенгашлари каналларида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ";",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Котибият мудири фаолияти - ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган вилояти, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган шаҳар, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган, Мингбулоқ, Косонсой, Тўрақўрғон, Учқўрғон, Уйчи, Чуст,",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Чортоқ, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Янгиқўрғон",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " тумани Кенгашлари каналларида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ";",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ҳокимларнинг депутатлик фаолияти - ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган шаҳар",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Поп, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уйчи, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Янги Наманган",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани Кенгашлари каналларида ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ёритилган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "4. Депутатлар томонидан 24 та масала бўйича ўтказилган ўрганишларга оид 318 та пост эълон қилинган. Бундай материаллар асосан Наманган вилояти, Наманган шаҳар, Чортоқ, Янгиқўрғон туман Кенгашлари каналларида кўпроқ ёритилган. Уларда асосан, таълим ва тиббиёт муассасалари ҳамда маҳаллалардаги ижтимоий масалаларни ўрганиш бўйича постлар эълон қилинган.",
+      "runs": [
+        {
+          "text": "4. Депутатлар томонидан ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "24",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та масала бўйича ўтказилган ўрганишларга оид ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "3",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "18",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост эълон ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "қ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "илинган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Бундай материаллар асосан ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган вилояти, Наманган шаҳар",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Янгиқўрғон",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "туман ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгашлари каналларида кўпроқ ёритилган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уларда асосан, ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "таълим ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва тиббиёт ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "муассасалари",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ҳамда маҳаллалардаги ижтимоий масалаларни ўрганиш бўйича ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар эълон қилинган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "5. Депутатлик сўрови юборилганлиги ҳақида 13 та пост эълон қилинган. Бундай материаллар асосан Чуст, Янгиқўрғон, Косонсой, Поп ва Чортоқ тумани Кенгашлари каналларида ёритилган. Уларда ички йўллар ва пиёдалар йўлакларининг ҳолати, шифохонада яратилган шароитлар, электр таъминоти ва ичимлик суви муаммоси, йўл таъмири, газ таъминоти билан боғлиқ муаммолар ва “Тоза ҳудуд” муассасаси фаолиятидаги камчиликлар билан боғлиқ муаммолар юзасидан тегишли ташкилотларга депутат сўровлари юборилгани ҳақида постлар берилган.",
+      "runs": [
+        {
+          "text": "5. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Депутатлик",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "сўрови",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "юборилганлиги",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ҳақида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "1",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "3",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "эълон",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "қ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "илинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Бундай",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "материаллар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "асосан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чуст",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", Янгиқўрғон,",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Косонсой, Поп ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Чортоқ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "туман",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгашлари",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "каналларида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ёритилган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уларда ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ички йўллар ва пиёдалар йўлакларининг ҳолати, шифохонада яратилган шароитлар, ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "электр ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "таъминоти",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ва ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ичимлик",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "суви",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " муаммоси",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "йўл таъмири, ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "газ таъминоти билан боғлиқ муаммолар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ва “Тоза ҳудуд” муассасаси фаолиятидаги камчиликлар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "билан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "боғлиқ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "муаммолар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "юзасидан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тегишли",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ташкилотларга",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " депутат ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "сўровлари",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "юборилгани",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ҳақида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "постлар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "берилган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ".",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "6. Депутатларга бириктирилган 162 та қонунлар ижросини ўрганишга оид амалга оширилган ишларга оид 54 та пост эълон қилинган. Хусусан, Косонсой, Янгиқўрғон, Чортоқ, Наманган ва Чуст тумани Кенгашлари каналида депутатларга бириктирилган қонунлар ва уларнинг ижроси бўйича малга оширилган ишлар тўғрисидаги постлар жойлаштирилган.",
+      "runs": [
+        {
+          "text": "6. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Депутатларга бириктирилган 162 та қонунлар ижросини ўрганишга оид амалга оширилган ишларга оид",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "54",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост эълон қилинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". Хусусан,",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Косонсой",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Янгиқўрғон, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", Наманган ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Чуст",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Кенгаш",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лари",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " каналида ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "депутатларга бириктирилган қонунлар ва уларнинг ижроси бўйича малга оширилган ишлар тўғрисидаги ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " жойлаштирилган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "7. Доимий комиссиялар фаолиятига оид 40 та пост эълон қилинган. Ушбу постлар асосан Наманган шаҳар, Чортоқ, Янгиқўрғон, Янги Наманган, Наманган ва Уйчи тумани Кенгашлари каналларида эълон қилинган бўлиб, уларда доимий комиссиялар йиғилишлари, айрим ижтимоий-иқтисодий масалалар юзасидан ўтказилган ўрганишлар ҳақида маълумотлар берилган.",
+      "runs": [
+        {
+          "text": "7. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Доимий",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "комиссиялар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "фаолиятига",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "оид",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "40",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост эълон қилинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". Ушбу ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "асосан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган шаҳар",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ, Янгиқўрғон, Янги Наманган, Наманган ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уйчи",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "туман",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгаш",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "каналларида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "эълон",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "қилинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "бўлиб",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "уларда",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "доимий",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "комиссиялар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "йиғилишлари",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "айрим",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ижтимоий-иқтисодий",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "масалалар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "юзасидан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ўтказилган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ўрганишлар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ҳақида",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "маълумотлар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "берилган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ".",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "8. Ҳафта давомида Эксперт ва ёшлар гуруҳлари фаолиятига оид 7 та пост эълон қилинган. Хусусан, Мингбулоқ, Чортоқ, Уйчи ва Учқўрғон тумани Кенгашининг каналида туман Кенгаши Эксперт ва Ёшлар масалаҳати гуруҳи фаолияти бўйича пост эълон қилинган.",
+      "runs": [
+        {
+          "text": "8. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Ҳафта давомида ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Эксперт",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва ёшлар ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "гуруҳлари фаолиятига оид ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "7",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост эълон қилинган. Х",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "усусан, ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Мингбулоқ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чортоқ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уйчи",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уч",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "қўрғон",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани Кенгашининг каналида ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "туман Кенгаши Эксперт ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва Ёшлар масалаҳати ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "гуруҳи фаолияти ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "бўйича ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "эълон қилинган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "9. Кенгаш сессияларига оид 14 та материал эълон қилинган. Хусусан, Наманган вилояти, Тўрақўрғон, Чортоқ, Мингбулоқ ва Чуст тумани Кенгашлари каналларида асосан сессиялар тўғрисида, кун тартибидаги масалалар муҳокама қилингани ҳақида ахборотлар жойлаштирилган.",
+      "runs": [
+        {
+          "text": "9. Кенгаш сессияларига оид ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "1",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "4",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та материал эълон қилинган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Хусусан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ", ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган вилояти",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Тўрақўрғон, Чортоқ, Мингбулоқ ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чуст",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "туман",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Кенгашлари каналларида асосан сессиялар ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тўғрисида,",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " кун тартибидаги масалалар муҳокама қилингани ҳақида ахборотлар жойлаштирилган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "10. Кенгашнинг ҳафталик иш режасига оид 15 та пост эълон қилинган. Наманган вилоятидаги барча маҳаллий Кенгашлар ҳафталик иш режаларини эълон қилган. Уйчи ва Чуст тумани Кенгашлари томонидан Кенгашнинг ҳафталик иш режалари билан бирга Котибият мудирларининг ҳам ҳафталик иш режалари эълон қилинган.",
+      "runs": [
+        {
+          "text": "10. Кенгашнинг ҳафталик иш режасига оид ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "1",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "5",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост эълон қилинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Наманган вилоятидаги барча маҳаллий Кенгашлар ҳафталик иш режаларини эълон қилган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Уйчи",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ва ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Чуст",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " тумани Кенгашлари томонидан Кенгашнинг ҳафт",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "а",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лик иш режалари билан бирга Котибият мудирларининг ҳам ҳафталик иш режалари эълон қилинган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "11. Кенгаш иш режаларининг ижросига оид 22 та пост эълон қилинган. Давлатобод, Норин, Тўрақўрғон ва  Чуст тумани Кенгашлари томонидан Кенгаш иш режаларининг ижросига оид алоҳида пост ва дайжестлар эълон қилинмаган. Учқўрғон тумани Кенгашининг ҳафталик иш режасининг ижроси инфографика шаклида эълон қилинган.",
+      "runs": [
+        {
+          "text": "1",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "1",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгаш иш режаларининг ижросига оид ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "22",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "та ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост эълон қилинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Давлатобод, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Норин, ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Тўрақўрғон",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "ва",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Чуст",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани Кенгашлари томонидан Кенгаш иш режаларининг ижросига оид алоҳида пост",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ва дайжестлар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " эълон қилинмаган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Учқўрғон ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани Кенгашининг ҳафталик иш режасининг ижроси инфографика шаклида эълон қилинган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "12. Бошқа масалаларга оид 298 та пост эълон қилинган. Ушбу йўналишдаги постлар асосан маҳаллий Кенгашлар фаолиятига доир ахборот-таҳлилий материаллар, ҳуқуқий тушунтиришлар, қонунчиликдаги янгиликлар, депутатлар фаолияти ҳақида таништирув материаллари ҳамда Кенгаш котибиятларида ўтказилган айрим йиғилиш ва тадбирларга оид хабарлардан иборат бўлган. Шунингдек, депутатларни таништирувга қаратилган постлар эълон қилинган.",
+      "runs": [
+        {
+          "text": "12.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " Бошқа масалаларга оид ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "2",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "9",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "8",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " т",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "а ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост эълон қилинган",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ".",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Ушбу йўналишдаги ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "пост",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар асосан маҳаллий Кенгашлар фаолиятига доир ахборот-таҳлилий материаллар, ҳуқуқий тушунтиришлар,",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " қонунчиликдаги янгиликлар, ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "депутатлар фаолияти ҳақида таништирув материаллари ҳамда Кенгаш",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " котибият",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "лар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "и",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "да ўтказилган айрим йиғилиш ва тадбирларга оид хабарлардан иборат бўлган. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Шунингдек",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " депутатларни таништирувга қаратилган ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "постлар эълон қилинган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": 5.0,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "13. Турли масалалар",
+      "runs": [
+        {
+          "text": "1",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "3",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ". ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Турли",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " масалалар",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "style": "Normal",
+      "alignment": "JUSTIFY (3)",
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": 1.0,
+      "left_indent_in": null,
+      "first_line_indent_in": 0.394,
+      "text": "Маҳаллий Кенгашлар томонидан ижтимоий тармоқларга доимий постлар қўйиб бориш борасида камчиликлар кузатилмоқда. Хусусан, Поп тумани Кенгаши каналида “Мадад” ННТ билан ҳамкорлик фаолияти тўғрисида пост эълон қилинган.",
+      "runs": [
+        {
+          "text": "Маҳаллий Кенгашлар томонидан ижтимоий тармоқларга доимий постлар қўйиб бориш борасида камчиликлар кузатилмоқда. ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Хусусан",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": ",",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "тумани",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "Кенгаши",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " канали",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "да ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": "“Мадад” ННТ билан ҳамкорлик фаолияти тўғрисида пост эълон қилинган.",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        },
+        {
+          "text": " ",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size_pt": 16.0
+        }
+      ]
+    }
+  ],
+  "table": {
+    "rows": 18,
+    "cols": 16,
+    "autofit": false,
+    "first_row_cell_widths_in": [
+      0.381,
+      1.626,
+      0.485,
+      0.672,
+      0.863,
+      0.672,
+      0.715,
+      0.885,
+      0.985,
+      0.485,
+      0.383,
+      0.482,
+      0.482,
+      0.385,
+      0.482,
+      0.482
+    ]
+  }
+}

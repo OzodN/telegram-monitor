@@ -1,0 +1,67 @@
+timezone: Asia/Tashkent
+
+telegram:
+  api_id_env: TELEGRAM_API_ID
+  api_hash_env: TELEGRAM_API_HASH
+  session_name: telegram_monitoring_session
+  channels:
+    - council_name: Наманган вилояти
+      telegram_url: https://t.me/Namanganviloyatikengashi
+    - council_name: Наманган шаҳар
+      telegram_url: https://t.me/Namanganshaharkengashi
+    - council_name: Давлатобод тумани
+      telegram_url: https://t.me/DavlatobodKengash
+    - council_name: Янги Наманган тумани
+      telegram_url: https://t.me/kengashyanginamangan
+    - council_name: Мингбулоқ тумани 
+      telegram_url: https://t.me/mingbuloqkengash
+    - council_name: Косонсой тумани
+      telegram_url: https://t.me/kosonsoykengash
+    - council_name: Наманган тумани
+      telegram_url: https://t.me/tumanild
+    - council_name: Норин тумани
+      telegram_url: https://t.me/kengashnorin
+    - council_name: Поп тумани
+      telegram_url: https://t.me/poptumankengashi
+    - council_name: Тўрақўрғон тумани
+      telegram_url: https://t.me/Xalqdeputatlaritumankengashi
+    - council_name: Уйчи тумани
+      telegram_url: https://t.me/uychikengashi
+    - council_name: Учқўрғон тумани
+      telegram_url: https://t.me/UchkurganKengash
+    - council_name: Чортоқ тумани
+      telegram_url: https://t.me/chortoqkengash
+    - council_name: Чуст тумани
+      telegram_url: https://t.me/chusttdeputatlari
+    - council_name: Янгиқўрғон тумани
+      telegram_url: https://t.me/Yangiqorgon_deputatlari
+
+gemini:
+  api_keys:
+    - GEMINI_API_KEY_1
+    - GEMINI_API_KEY_2
+    - GEMINI_API_KEY_3
+  model: gemini-2.5-flash
+  request_timeout_seconds: 300
+  temperature: 0
+
+classification:
+  batch_size: 75
+  retry_attempts: 10
+  request_delay_seconds: 5
+  retry_backoff_seconds: 15
+  max_backoff_seconds: 90
+  max_requests_per_minute: 5
+
+paths:
+  classification_specification_md: references\classification_specification_v2.md
+  narrative_specification_md: references\narrative_specification_v1.md
+  issues_24_md: references\24_ta_masala.md
+  laws_162_md: references\Qonunlar_taqsimoti.md
+  reference_report_docx: references\Telegram_bo'yicha_haftalik_jadval_22_28_iyun.docx
+  output_root: data
+
+report_period:
+  mode: auto
+  explicit_start: null
+  explicit_end: null

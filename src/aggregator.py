@@ -63,9 +63,7 @@ def aggregate_report_data(
             )
         )
 
-    overall_average_views = 0
-    if overall_viewed_posts_count:
-        overall_average_views = round(overall_total_views / overall_viewed_posts_count)
+    overall_average_views = sum(stats.average_views for stats in channel_stats)
 
     aggregated_report = AggregatedReport(
         period=period,

@@ -1,6 +1,8 @@
 ﻿.env
 
 telegram_monitor.session
+*.session
+*.session-journal
 
 *.pyc
 

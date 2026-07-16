@@ -4,7 +4,8 @@ import json
 import logging
 import re
 import time
-from typing import Any
+import concurrent.futures
+from typing import Any, TypedDict
 
 from src.classification_support import (
     ALLOWED_CATEGORIES,
@@ -24,6 +25,25 @@ from src.regression_checks import clean_and_heal_post_fields
 from src.utils import chunked
 
 
+class DatasetReferenceSchema(TypedDict):
+    dataset: str
+    reference_id: str
+
+class AuditDecisionSchema(TypedDict):
+    post_id: int
+    category_id: int
+    category_reason: str
+    matched_rule: str
+    evidence: list[str]
+    dataset_references: list[DatasetReferenceSchema]
+    request_marker: str | None
+    category_3_official: str | None
+    category_5_subtype: str | None
+    category_5_problem_type: str | None
+    category_12_subtype: str | None
+    audit_status: str
+    audit_notes: str | None
+
 logger = logging.getLogger(__name__)
 MAX_POST_TEXT_CHARS = 1600
 
@@ -38,10 +58,26 @@ def audit_classified_posts(
         return []
 
     audited: list[ClassifiedPost] = []
-    for batch_index, batch in enumerate(chunked(classified_posts, config.classification_batch_size), start=1):
-        audited_batch = _audit_batch(batch, batch_index, config, reference_data, gemini_client)
-        audited.extend(audited_batch)
-        logger.info("Audited batch %s with %s posts", batch_index, len(batch))
+    batches = list(chunked(classified_posts, config.classification_batch_size))
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(config.api_keys)) as executor:
+        futures = [
+            executor.submit(
+                _audit_batch,
+                batch,
+                batch_index,
+                config,
+                reference_data,
+                gemini_client,
+            )
+            for batch_index, batch in enumerate(batches, start=1)
+        ]
+
+        for batch_index, future in enumerate(futures, start=1):
+            batch_result = future.result()
+            audited.extend(batch_result)
+            logger.info("Audited batch %s with %s posts", batch_index, len(batches[batch_index - 1]))
+
     return audited
 
 
@@ -65,6 +101,7 @@ def _audit_batch(
         },
         operation_name=f"audit batch {batch_index}",
         validator=_is_audit_payload_shape,
+        response_schema=list[AuditDecisionSchema],
     )
     api_call_seconds = time.perf_counter() - api_started_at
 

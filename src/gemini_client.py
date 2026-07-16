@@ -5,6 +5,7 @@ import math
 import random
 import re
 import time
+import threading
 from collections import deque
 from collections.abc import Callable
 from typing import Any
@@ -47,73 +48,48 @@ class GeminiRetryableResponseFormatError(RuntimeError):
     """Raised when a Gemini response is not valid structured output for the requested operation."""
 
 
-class _RequestThrottle:
-    """Global per-run rate limiter for every Gemini request, including retries."""
+import queue
+import threading
 
-    def __init__(self, request_delay_seconds: float, max_requests_per_minute: int) -> None:
-        self.request_delay_seconds = request_delay_seconds
-        self.max_requests_per_minute = max_requests_per_minute
-        self._recent_request_times: deque[float] = deque()
-        self._last_request_started_at: float | None = None
-
-    def wait_for_slot(self) -> None:
-        while True:
-            now = time.monotonic()
-            self._prune(now)
-
-            wait_for_delay = 0.0
-            if self._last_request_started_at is not None:
-                wait_for_delay = max(0.0, self.request_delay_seconds - (now - self._last_request_started_at))
-
-            wait_for_rate_limit = 0.0
-            if len(self._recent_request_times) >= self.max_requests_per_minute:
-                oldest_request = self._recent_request_times[0]
-                wait_for_rate_limit = max(0.0, 60.0 - (now - oldest_request))
-
-            sleep_for = max(wait_for_delay, wait_for_rate_limit)
-            if sleep_for <= 0:
-                request_started_at = time.monotonic()
-                self._prune(request_started_at)
-                self._recent_request_times.append(request_started_at)
-                self._last_request_started_at = request_started_at
-                return
-
-            time.sleep(sleep_for)
-
-    def _prune(self, now: float) -> None:
-        while self._recent_request_times and now - self._recent_request_times[0] >= 60.0:
-            self._recent_request_times.popleft()
-
-
-class GeminiKeyManager:
+class GeminiKeyPool:
     def __init__(self, api_keys: list[str]) -> None:
         if not api_keys:
             raise ValueError("At least one Gemini API key must be configured")
-        self._api_keys = api_keys
-        self._current_index = 0
+        self._api_keys = list(api_keys)
+        
+        self._idle_keys = queue.Queue()
+        for key in self._api_keys:
+            self._idle_keys.put(key)
+            
+        self._active_keys_count = len(api_keys)
+        self._lock = threading.Lock()
 
-    @property
-    def current_key(self) -> str:
-        return self._api_keys[self._current_index]
+    def acquire_key(self) -> str:
+        with self._lock:
+            if self._active_keys_count == 0:
+                raise GeminiAllKeysExhaustedError("All configured Gemini API keys are exhausted.")
+                
+        # Block until an idle key is returned to the pool
+        # If all active keys are busy, this thread will wait.
+        return self._idle_keys.get()
 
-    @property
-    def current_key_label(self) -> str:
-        return self._format_key_label(self._current_index)
+    def release_key(self, key: str) -> None:
+        self._idle_keys.put(key)
 
-    @property
-    def total_keys(self) -> int:
-        return len(self._api_keys)
+    def drop_key(self, key: str) -> None:
+        # Key is not returned to the idle queue, permanently reducing the pool size.
+        with self._lock:
+            self._active_keys_count -= 1
+            if self._active_keys_count == 0:
+                # Release a dummy item just to unblock any waiting threads 
+                # so they can wake up and raise GeminiAllKeysExhaustedError
+                self._idle_keys.put("EXHAUSTED")
 
-    def move_to_next_key(self) -> bool:
-        if self._current_index >= len(self._api_keys) - 1:
-            return False
-
-        self._current_index += 1
-        logger.warning("Switching to %s", self.current_key_label)
-        return True
-
-    def _format_key_label(self, index: int) -> str:
-        key = self._api_keys[index]
+    def format_key_label(self, key: str) -> str:
+        try:
+            index = self._api_keys.index(key)
+        except ValueError:
+            index = -1
         suffix = key[-4:] if len(key) >= 4 else key
         return f"{index + 1}/{len(self._api_keys)} (...{suffix})"
 
@@ -121,12 +97,8 @@ class GeminiKeyManager:
 class GeminiClient:
     def __init__(self, config: GeminiConfig) -> None:
         self._config = config
-        self._key_manager = GeminiKeyManager(config.api_keys)
+        self._pool = GeminiKeyPool(config.api_keys)
         self._clients: dict[str, genai.Client] = {}
-        self._throttle = _RequestThrottle(
-            request_delay_seconds=config.request_delay_seconds,
-            max_requests_per_minute=config.max_requests_per_minute,
-        )
 
     def generate_content(
         self,
@@ -148,10 +120,15 @@ class GeminiClient:
         request_config: dict[str, Any],
         operation_name: str,
         validator: Callable[[Any], bool],
+        response_schema: Any | None = None,
     ) -> Any:
+        config = dict(request_config)
+        if response_schema is not None:
+            config["response_schema"] = response_schema
+
         return self._generate_with_retry(
             contents=contents,
-            request_config=request_config,
+            request_config=config,
             operation_name=operation_name,
             response_parser=lambda raw_text: _parse_json_response(raw_text, validator=validator),
         )
@@ -165,15 +142,21 @@ class GeminiClient:
         response_parser: Callable[[str], Any] | None = None,
     ) -> Any:
         while True:
+            key = self._pool.acquire_key()
+            if key == "EXHAUSTED":
+                raise GeminiAllKeysExhaustedError("All configured Gemini API keys are exhausted.")
+                
+            client = self._get_client_for_key(key)
+            key_died = False
+            
             for attempt in range(1, self._config.retry_attempts + 1):
-                client = self._get_current_client()
                 try:
-                    self._throttle.wait_for_slot()
                     response = client.models.generate_content(
                         model=self._config.model,
                         contents=contents,
                         config=request_config,
                     )
+                    self._pool.release_key(key)
                     if response_parser is None:
                         return response
                     return response_parser(getattr(response, "text", "") or "")
@@ -183,24 +166,23 @@ class GeminiClient:
                     is_daily_quota = _is_daily_quota_exhaustion_error(exc)
                     is_auth_err = _is_auth_error(exc)
 
-                    # 1. Immediate key rotation for dead keys (Daily Quota or Auth errors)
+                    key_label = self._pool.format_key_label(key)
+
+                    # 1. Immediate key drop for dead keys (Daily Quota or Auth errors)
                     if is_daily_quota or is_auth_err:
                         reason = "Daily quota exhausted" if is_daily_quota else "Authentication/Authorization failure (invalid/dead key)"
                         logger.warning(
-                            "%s for %s during %s. Rotating key.",
+                            "%s for %s during %s. Dropping key from pool.",
                             reason,
-                            self._key_manager.current_key_label,
+                            key_label,
                             operation_name,
                         )
-                        self._drop_client(self._key_manager.current_key)
-                        if self._key_manager.move_to_next_key():
-                            break
-                        raise GeminiAllKeysExhaustedError(
-                            f"All configured Gemini API keys are exhausted. Last error: {_extract_retry_reason(exc)}"
-                        ) from exc
+                        self._pool.drop_key(key)
+                        self._drop_client(key)
+                        key_died = True
+                        break # Break inner loop, fetch new key from pool
 
-                    # 2. Check if this is a retryable error on the SAME key
-                    # (non-daily 429 rate limit, 503/500/502/504 server error, connection/transport error, or timeout error)
+                    # 2. Check if this is a retryable error
                     is_retryable = (
                         _is_retryable_same_key_error(exc)
                         or is_conn_error
@@ -209,51 +191,47 @@ class GeminiClient:
 
                     if is_retryable:
                         if attempt < self._config.retry_attempts:
-                            # Drop current client so next attempt gets a fresh instance (but same key)
-                            self._drop_client(self._key_manager.current_key)
                             retry_delay_seconds = _calculate_retry_delay_seconds(exc, self._config, attempt)
                             logger.warning(
                                 "Retryable Gemini failure during %s | reason=%s | status=%s | "
-                                "retry_attempt=%s/%s | backoff_seconds=%s | current_key=%s. "
-                                "Dropping client for fresh instance retry.",
+                                "retry_attempt=%s/%s | sleep_penalty=%s | current_key=%s. "
+                                "Sleeping while holding key.",
                                 operation_name,
                                 _extract_retry_reason(exc),
                                 _extract_error_code(exc),
                                 attempt,
                                 self._config.retry_attempts,
                                 _format_wait_seconds(retry_delay_seconds),
-                                self._key_manager.current_key_label,
+                                key_label,
                             )
+                            # Sleep while holding the key. This naturally rate-limits this specific key!
                             time.sleep(retry_delay_seconds)
                             continue
                         else:
-                            # Local retries exhausted for this key. Rotate key.
                             logger.warning(
-                                "Local retries exhausted for key %s during %s | reason=%s. Rotating key.",
-                                self._key_manager.current_key_label,
+                                "Max retries exhausted for key %s during %s | reason=%s.",
+                                key_label,
                                 operation_name,
                                 _extract_retry_reason(exc),
                             )
-                            self._drop_client(self._key_manager.current_key)
-                            if self._key_manager.move_to_next_key():
-                                break
-                            raise GeminiAllKeysExhaustedError(
-                                f"All configured Gemini API keys are exhausted due to local retry failures. Last error: {_extract_retry_reason(exc)}"
-                            ) from exc
+                            self._pool.release_key(key)
+                            raise
 
-                    # 3. For any non-retryable error (e.g. 400 Bad Request, 404 Not Found),
-                    # we do NOT rotate keys and instead fail immediately.
+                    # 3. Non-retryable
                     logger.error(
                         "Non-retryable Gemini error during %s | reason=%s | status=%s | current_key=%s. Failing immediately.",
                         operation_name,
                         _extract_retry_reason(exc),
                         _extract_error_code(exc),
-                        self._key_manager.current_key_label,
+                        key_label,
                     )
+                    self._pool.release_key(key)
                     raise
+                    
+            if not key_died:
+                raise RuntimeError("Unexpected exit from retry loop")
 
-    def _get_current_client(self) -> genai.Client:
-        api_key = self._key_manager.current_key
+    def _get_client_for_key(self, api_key: str) -> genai.Client:
         client = self._clients.get(api_key)
         if client is None:
             client = genai.Client(

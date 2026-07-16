@@ -1,7 +1,7 @@
 # TELEGRAM MONITORING CLASSIFICATION SPECIFICATION
-## Namangan Region Local Councils (Kengash) — Version 2
+## Namangan Region Local Councils (Kengash) — Version 2.1
 
-**Status:** AUTHORITATIVE. This document supersedes and fully replaces `reference_document_for_categories.md` and `categories_instruction.txt` in their entirety. Those documents are deprecated upon publication of this specification and MUST NOT be consulted for classification decisions.
+**Status:** AUTHORITATIVE. This version supersedes Version 2.0 in full, remediating a confirmed production defect in the Category 2 / Category 12 boundary (see Section 0.1).
 
 **Applies to:** Human annotators, the Gemini classifier component, future auditors, regression test suites, and all validation tooling.
 
@@ -13,11 +13,23 @@
 
 | Field | Value |
 |---|---|
-| Version | 2.0 |
-| Supersedes | reference_document_for_categories.md (all versions), categories_instruction.txt (all versions) |
+| Version | 2.1 |
+| Supersedes | Version 2.0 |
 | Category count | 12 (Category 1 is a computed total, not an assignable label) |
 | Assignable categories | 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 |
 | Number of categories per post | Exactly one category per post. No exceptions. |
+
+### 0.1 Revision Log (v2.0 → v2.1)
+
+**Confirmed defect:** A production audit of a 1,095-post batch classified under v2.0 found 206 posts (18.8% of all posts) assigned to Category 2 — an order of magnitude above the expected residual (~10–15 posts per comparable period). Root-cause analysis of all 206 posts found:
+- 194 posts (94%) explicitly named a law, legislative act, council institution, committee, session, or deputy-role term.
+- A further 11 posts described mahalla-level civic/investigative activity, legal-rights procedures, or anti-corruption legal content not caught by the keyword scan above.
+- Only 1 post was a genuine, content-free patriotic/calendar greeting with no legal or institutional connection at all — and even that post carried a recurring channel-promotion template phrase that independently qualifies it as a Template Post (Definition 2.9).
+- In effect, 205 of 206 (99.5%) Category 2 assignments were incorrect under this specification's own stated purpose for Category 2 ("posts not directly related to council activities").
+
+**Root cause:** Definition 2.1 ("Named Council Actor") and Decision Tree Node 11 tested only for the presence of a *specifically named individual, role-holder, committee, or group*. They never tested whether a post's *subject matter* concerned council, deputy, or legislative institutional topics in a generic, non-individually-attributed sense. As a result, any post about deputy duties in general, the Kengash's own institutional function, legal/civic-education content branded under the channel's own recurring hashtag taxonomy (`#162_qonun`, `#Qonunchilikdagi_yangiliklar`, `#Bilasizmi`, `#deputat_vazifasi`, and similar), or unattributed mahalla-level investigative activity, fell all the way through to Category 2 by default — even though such content is self-evidently council-related and belongs in Category 12.
+
+**Fix:** A new Definition 2.1a ("Council-Related Subject Matter") is introduced. It governs the Category 2 / Category 12 boundary specifically (Gates P11 and P13), while Definition 2.1 ("Named Council Actor") continues, unchanged, to govern Gates P2–P10. Category 2 is now correctly restricted to content that has no connection whatsoever to law, legislation, governance, or council/deputy institutional matters — its originally intended, narrow scope. See Definition 2.1a, the revised Category 2 and Category 12 specifications, and revised Decision Tree Nodes 11 and 13, below.
 
 ---
 
@@ -47,6 +59,18 @@ These terms are used throughout this specification with the exact meaning define
 - A named Expert Group or Youth Advisory Group
 
 *Note: the kotibiyat mudiri o'rinbosari (assistant/deputy secretariat head) is a distinct role from the kotibiyat mudiri and is NOT one of the "three special officials" referenced throughout this specification (see 2.11). The o'rinbosari is treated as a regular secretariat specialist for all classification purposes.*
+
+**2.1a Council-Related Subject Matter** — This definition governs the Category 2 / Category 12 boundary specifically (Gates P11 and P13, Section 4). It is broader than, and independent of, Definition 2.1: a post can satisfy 2.1a without containing any Named Council Actor at all. A post satisfies "Council-Related Subject Matter" if its substantive content concerns ANY of the following:
+
+  (a) A Named Council Actor (2.1) is present — this subsumes the old test as one sufficient (but no longer necessary) condition.
+  (b) The post explains, summarizes, announces, or references any law, legislative act, presidential decree, government resolution, legal right, or legal/regulatory procedure — regardless of whether a specific deputy or official is named as performing any monitoring activity. This is true whether or not the post carries a recognized recurring civic-education hashtag (e.g., `#162_qonun`, `#162_ta_qonun`, `#Qonunchilikdagi_yangiliklar`, `#Bilasizmi`, `#Qonun_mazmuni`, `#Qonunlar_bilan_tanishing`, `#Amal_qiling`, `#yodda_tuting`) — such hashtags are a strong confirming signal but their absence does not defeat this test if the substantive content is still legal/legislative in nature.
+  (c) The post substantively concerns the Kengash institution's own structure, powers, duties, function, or internal organizational activity (e.g., "Mahalliy Kengashlarning fuqarolar oldidagi vazifalari," an internal meeting evaluating deputies' performance or request effectiveness), even when referenced generically ("mahalliy kengash," "deputat") rather than via a specifically named individual.
+  (d) The post substantively concerns deputies' duties, responsibilities, ethics, or role in a generic, non-individually-named sense (e.g., `#deputat_vazifasi`, "deputat o'z vazifalarini vijdonan bajarishi kerak"), or explains how citizens can identify or contact their deputy (e.g., an E-Kengash portal promotion).
+  (e) The post describes an investigative, informational, or civic-support activity conducted at the mahalla/community level on a governance-, social-protection-, or public-service-adjacent topic, even if no specific named actor performed it (e.g., an unattributed report of a mahalla polyclinic visit or mahalla banker study).
+
+A post satisfying 2.1a is NEVER Category 2. It is Category 12, unless it independently matches a higher-priority gate (P1–P10) first — 2.1a is evaluated only at Gate P11, after all more specific categories have already been ruled out, and does not alter the boundaries of Categories 3–11 in any way.
+
+Category 2 (Gate P13) is reserved exclusively for content that satisfies NONE of (a)–(e) above — i.e., content with no connection whatsoever to law, legislation, governance, or council/deputy institutional matters (for example, a purely patriotic or calendar greeting with no legal or institutional framing, or content entirely outside the civic/governmental domain).
 
 **2.2 Formal Deputy Request ("so'rov")** — A post SHALL be treated as containing a Formal Deputy Request if and only if it contains one of the following textual markers (in any script — Cyrillic or Latin):
 - "сўров юборилди" / "so'rov yuborildi"
@@ -93,7 +117,7 @@ Where a post is unambiguously the Council's own institutional plan (condition (d
 
 **G2.** Classification is determined by matching the post against the Decision Tree in Section 10, in the exact order given. The first matching node determines the category. Do not skip ahead or evaluate nodes out of order.
 
-**G3.** The presence of a Named Council Actor (2.1) is necessary but never sufficient on its own to exclude Category 2 or determine any other category — it is one required input to the Decision Tree, evaluated at the node where it is specified.
+**G3.** The presence of a Named Council Actor (2.1) is sufficient, but no longer necessary, to exclude Category 2. Definition 2.1 is required input for Gates P2–P10 (determining which of Categories 3–11 applies). The Category 2 / Category 12 boundary specifically (Gates P11, P13) is governed by the broader test in Definition 2.1a, which a post can satisfy without any Named Council Actor being present at all.
 
 **G4.** Hashtags are authoritative signals and are checked before free-text interpretation at every relevant Decision Tree node. If a hashtag and the surrounding text conflict, the hashtag governs, unless the hashtag is objectively misapplied (e.g., `#24_masala` on a post with zero investigative content) — in which case Rule T-ARB-1 (Section 11) applies.
 
@@ -130,9 +154,9 @@ This is a total ordering. Evaluate every post against these gates strictly in se
 | 8 | Post has a Plan Execution Reference tied to the Council's own plan (2.8) | 11 | P8 |
 | 9 | Actor is hokim, kengash raisi, or kotibiyat mudiri, performing any activity not captured by Gates P1–P8 — including 24-Issue Investigations personally conducted by these officials — except the vacant-electoral-district substitute-duty scenario (EDGE-3.2, which routes to Gate P10) | 3 | P9 |
 | 10 | Post satisfies 24-Issue Investigation (2.3) by any deputy or kotibiyat mudiri o'rinbosari (assistant secretariat head — excludes the hokim, kengash raisi, and kotibiyat mudiri themselves, who are governed by Gate P9 per G5), or by the raisi/kotibiyat mudiri under the vacant-district substitute-duty exception | 4 | P10 |
-| 11 | Named Council Actor (2.1) is present, no prior gate matched — includes legislative news, legal awareness materials, public information campaigns, presidential-decree summaries, and ministerial publications when a Named Council Actor is referenced within them | 12 | P11 |
+| 11 | Post satisfies Council-Related Subject Matter (2.1a), no prior gate matched — includes a Named Council Actor being present, OR legislative/legal content, OR generic council/deputy-institutional content, OR mahalla-level governance-adjacent investigative content, even without any specifically named individual | 12 | P11 |
 | 12 | Post is a Template Post (2.9) | 12 | P12 |
-| 13 | No Named Council Actor present — general public/legal information, holiday greetings, birthday greetings, and posts unrelated to council/deputy activity | 2 | P13 |
+| 13 | Post fails Council-Related Subject Matter (2.1a) entirely — a purely patriotic/calendar greeting or content genuinely unrelated to law, governance, council, or deputy activity | 2 | P13 |
 | 14 | None of the above (residual) | 12 | P14 |
 
 **This table is identical in logic to the Decision Tree in Section 10 and is provided as a quick-reference summary. Section 10 is the authoritative, fully-specified version.**
@@ -153,37 +177,44 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 
 ### CATEGORY 2 — Posts Not Directly Related to Council Activities
 
-**Purpose:** Capture reposts, general public information, and legal/administrative content that has no connection to the specific activity of this Kengash, its deputies, or its officials.
+**Purpose:** Capture the narrow residual of content that has no connection whatsoever to law, legislation, governance, or the activity of this Kengash, its deputies, or its officials. As of v2.1, this is a small residual category, not a general-purpose bucket for anything lacking a named individual (see Section 0.1 for why the v2.0 behavior was defective).
 
 **Inclusion criteria (ALL must be true):**
-- No Named Council Actor (2.1) is present in the post as an actor, participant, author, or subject.
+- The post fails Council-Related Subject Matter (Definition 2.1a) entirely — none of 2.1a's conditions (a)–(e) are satisfied.
 - Gates P1–P12 in Section 4 have all been evaluated and did not match.
-- The content is one of: legislative news, legal awareness material, public information campaign, presidential decree summary, ministry publication, congratulatory/holiday message, birthday greeting, or other content unrelated to council/deputy activity.
+- The content is one of: a purely patriotic/calendar/historical-date greeting with no legal or institutional framing, a purely personal congratulatory message (e.g., a birthday greeting) with no legal or institutional framing, or content genuinely unrelated to law, governance, or council/deputy activity in any way.
 
 **Exclusion criteria (ANY makes this NOT Category 2):**
-- A Named Council Actor is mentioned as participant, author, or subject (→ Category 12).
+- The post satisfies Council-Related Subject Matter (2.1a) — including, without limitation: any explanation, summary, or announcement of a law, legislative act, presidential decree, or legal procedure (regardless of whether a deputy is named); any content about the Kengash institution's own structure, powers, or duties; any content about deputies' duties or ethics in a generic sense; any content helping citizens identify or contact their deputy; or any unattributed mahalla-level governance-adjacent investigative or civic-support activity (→ Category 12 in every case).
 - The post is a Template Post per Definition 2.9 (→ Category 12, per P12, which is checked before P13).
 - The post describes, profiles, or introduces a named deputy (→ Category 12).
 - The post is a daily or weekly digest summarizing multiple council activities (→ Category 12, per Rule T-EDGE-3 below).
 
-**Mandatory conditions:** Gate P13 in the Decision Tree is reached only after confirming no earlier gate (P1–P12) matched.
+**Mandatory conditions:** Gate P13 in the Decision Tree is reached only after confirming no earlier gate (P1–P12) matched, including P11 (the 2.1a check).
 
-**Precedence interactions:** Category 2 is the lowest-priority substantive category. It is assigned only when every other category, including the Category 12 catch-all conditions (Template Posts, digests, actor-present content), has been explicitly ruled out.
+**Precedence interactions:** Category 2 is the lowest-priority substantive category. It is assigned only when every other category, including the broadened Category 12 catch-all conditions (2.1a subject matter, Template Posts, digests), has been explicitly ruled out.
 
 **Examples (correctly Category 2):**
-- "O'zbekiston Respublikasi Prezidentining PQ-98-son qarori qabul qilindi" (presidential decree news, no deputy/council mention)
-- "Bugun — Matbuot va OAV xodimlari kuni! Barchani tabriklaymiz" (generic congratulations, no named actor)
-- "Tug'ilgan kuningiz muborak bo'lsin!" (birthday greeting, no named council actor)
-- An externally-authored article about national labor law changes, reposted without commentary
+- "Tug'ilgan kuningiz muborak bo'lsin!" (birthday greeting, no legal or institutional content at all)
+- A purely patriotic/historical greeting with zero legislative, legal, or institutional reference and no recurring channel template phrase (a genuinely rare case — see EDGE-2.1 below for the closely related case that is NOT this)
+- Content entirely outside the civic/governmental domain (e.g., a weather notice with no connection to any council function) — not observed in the audited dataset, but the residual this category exists to capture
 
-**Counterexamples (NOT Category 2, despite superficial similarity):**
-- Same presidential decree news, but the post adds "Kengash deputati Sh. Ergashev bu qarorni ijro etish yuzasidan tushuntirish berdi" → Category 12 (named deputy present)
+**Counterexamples (NOT Category 2, despite superficial similarity to the v2.0 examples this section previously listed):**
+- "O'zbekiston Respublikasi Prezidentining PQ-98-son qarori qabul qilindi" (a presidential decree announcement) → **Category 12** as of v2.1, per 2.1a(b) — this is legislative content, regardless of whether a deputy is named. (This example was incorrectly listed as Category 2 in v2.0; see Section 0.1.)
+- "#Qonunchilikdagi_yangiliklar ... Paxta-to'qimachilik sohasi korxonalari yanada qo'llab-quvvatlanadi" (a channel-branded legislative-news post about a presidential resolution) → Category 12, per 2.1a(b).
+- "#162_qonun ... Mehnat kodeksi – xodim va ish beruvchi huquqlarining kafolati" (a generic Labor Code explainer with no deputy named) → Category 12, per 2.1a(b). This directly reverses the incorrect EDGE-2.1 ruling in v2.0 (see below).
+- "#deputat_vazifasi #yodda_tuting ... Deputat o'z vazifalarini vijdonan va halol bajarishi..." (a generic post about deputies' ethical duties, no individual named) → Category 12, per 2.1a(d).
+- "Mahalliy Kengashlarning fuqarolar oldidagi asosiy vazifalari" (a post listing the Kengash institution's own general duties) → Category 12, per 2.1a(c).
+- "Deputat mas'uliyati, so'rovlar natijadorligi va odob-axloq qoidalari tanqidiy tahlil qilindi... Xalq deputatlari Mingbuloq tumani Kengashida..." (an internal council meeting evaluating deputies' performance and request effectiveness, no individual named) → Category 12, per 2.1a(c) — this is genuine internal council organizational activity and must never default to Category 2 merely because no single deputy is named.
+- "Kolgandaryo mahallasidagi 9-sonli oilaviy poliklinikada o'rganish ishlari olib borildi" (an unattributed report of a mahalla-level polyclinic investigation, no named investigator) → Category 12, per 2.1a(e).
 - A "kunlik dayjest" aggregating the day's council posts → Category 12 (multi-activity digest, per Rule T-EDGE-3)
 - "Assalomu alaykum, hurmatli kuzatuvchilar!" greeting template → Category 12 (Template Post, per P12)
+- Same presidential decree news, but the post adds "Kengash deputati Sh. Ergashev bu qarorni ijro etish yuzasidan tushuntirish berdi" → Category 12 (named deputy present, 2.1a(a))
 
 **Edge cases:**
-- **EDGE-2.1:** A legal explainer post mentions a law from the 162-law list but names no deputy and describes no monitoring activity → Category 2 is correct (per Definition 2.4, "162-Law Monitoring" requires a named responsible deputy; absent that, it is generic legal content).
-- **EDGE-2.2:** A repost from a regional government account that happens to quote the hokim in his executive capacity, with no council-relevant framing at all (e.g., a purely municipal ceremony unrelated to Kengash business) → Category 2 is correct.
+- **EDGE-2.1 (corrected in v2.1):** A legal explainer post mentions a law from the 162-law list but names no deputy and describes no monitoring activity → **Category 12** (per 2.1a(b) — the absence of a named responsible deputy correctly disqualifies the post from Category 6, per Definition 2.4, but it does NOT default the post to Category 2; legislative/legal content is Council-Related Subject Matter regardless of deputy attribution). This entry corrects the v2.0 version of this edge case, which incorrectly concluded Category 2 and was the single largest contributor to the 206-post defect described in Section 0.1.
+- **EDGE-2.2:** A repost that quotes the hokim strictly in his executive (non-deputy, non-council) capacity, describing a purely municipal or ceremonial matter with no legislative content and no connection to Kengash business at all (e.g., attending a ribbon-cutting for a facility wholly outside any Kengash-tracked topic) → Category 2 is correct — this is the one hokim-related scenario that survives the 2.1a broadening, because it satisfies none of 2.1a(a)–(e).
+- **EDGE-2.3 (new in v2.1):** A post carries a recurring channel civic-education hashtag (e.g., `#Bilasizmi`, `#162_qonun`) but the underlying content, on inspection, is not actually legal/legislative (e.g., the hashtag was applied to an unrelated announcement by mistake) → the hashtag is not itself dispositive; classify per the actual substantive content against 2.1a. If the actual content still fails all of 2.1a(a)–(e), Category 2 applies despite the hashtag's presence.
 
 ---
 
@@ -308,7 +339,7 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 
 **Exclusion criteria (ANY makes this NOT Category 6):**
 - The primary actor is a standing committee (ДК) → Category 7 (Gate P2 is absolute and always evaluated first).
-- The post merely explains what a law says, with no named deputy performing a monitoring action → Category 2 (if no actor at all) or Category 12 (if any Named Council Actor appears, e.g., a generic Kengash-authored explainer).
+- The post merely explains what a law says, with no named deputy performing a monitoring action → **Category 12**, always, per Definition 2.1a(b) (legal/legislative content is Council-Related Subject Matter regardless of whether a deputy is named). This is a deterministic resolution as of v2.1; the v2.0 wording's "Category 2 or Category 12" branch was ambiguous and is corrected here (see Section 0.1).
 - The post contains a Formal Deputy Request marker → Category 5.
 - The post is a Plan Execution Reference for law-monitoring activity previously reported → apply Rule T-ARB-3 (Section 11): if the post is a first-time report of law monitoring, it is Category 6; if it explicitly frames the activity as reporting on execution of a previously published **Council's** plan item (not the deputy's or kotibiyat mudiri's own plan), it is Category 11.
 
@@ -321,13 +352,13 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - Post tagged `#162` describing a deputy's field study of consumer credit law implementation at a bank branch → Category 6
 
 **Counterexamples (NOT Category 6):**
-- "Ijtimoiy sheriklik — hamkorlik va taraqqiyot omili" (explains what the law says, no deputy monitoring action) → Category 12 (if Kengash channel is the visible author) or Category 2 (if purely repost with no channel-specific framing)
+- "Ijtimoiy sheriklik — hamkorlik va taraqqiyot omili" (explains what the law says, no deputy monitoring action) → **Category 12**, deterministically, per Definition 2.1a(b) — the distinction between "channel-authored" and "repost with no framing" that this counterexample drew in v2.0 no longer matters: legal/legislative content is Category 12 either way
 - "ДК йиғилишида 'Экологик назорат тўғрисида'ги қонун ижроси муҳокама қилинди" (committee, not individual deputy) → Category 7
 - Same law-monitoring post, but concluding with "...natijasida tegishli idoraga so'rov yuborildi" → Category 5
 
 **Edge cases:**
 - **EDGE-6.1:** A deputy monitors a law not on the 162-list but structurally similar in subject → Category 12 (does not satisfy Definition 2.4; the deputy is a Named Council Actor, so the post is not Category 2).
-- **EDGE-6.2:** The `#162` hashtag is present but no deputy name or investigation content appears (e.g., a bare law-title announcement) → **Category 12** (per Rule T-ARB-1, the hashtag is treated as misapplied given zero monitoring-activity content, and the post defaults to Category 12 because a Named Council Actor context — the Kengash channel's own law-related framing — is present).
+- **EDGE-6.2:** The `#162` hashtag is present but no deputy name or investigation content appears (e.g., a bare law-title announcement) → **Category 12** (per Rule T-ARB-1, the hashtag is treated as misapplied given zero monitoring-activity content, and the post defaults to Category 12 per Definition 2.1a(b) — bare law-related content is Council-Related Subject Matter regardless of deputy attribution).
 
 ---
 
@@ -501,16 +532,19 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - Daily or weekly digest posts summarizing multiple different council activities (Rule T-EDGE-3)
 - Template posts (greeting templates, social media promotion) per Definition 2.9
 - Personal work schedules or individual work plans of the kotibiyat mudiri, a deputy, or a specialist, which fail the Council-ownership test in Definition 2.7(d)
-- General legal explanations authored or shared by the Kengash channel that name a Council Actor but describe no specific monitoring/investigation/request activity
+- Any legal or legislative explanation, summary, or announcement — whether or not it names a Council Actor, and whether or not it carries a recognized civic-education hashtag — per Definition 2.1a(b). This is broader than the v2.0 wording ("...that name a Council Actor..."), which was the primary cause of the defect described in Section 0.1.
+- Any content about the Kengash institution's own structure, powers, duties, or internal organizational activity, per Definition 2.1a(c)
+- Any content about deputies' duties, responsibilities, or ethics in a generic sense, or content helping citizens identify/contact their deputy, per Definition 2.1a(d)
+- Any unattributed mahalla-level governance-adjacent investigative or civic-support activity, per Definition 2.1a(e)
 - Misapplied group-specific hashtags per Edge Case 8.2
 
 **Inclusion criteria (residual, per Gate P11):**
-- A Named Council Actor (2.1) is present in the post, AND
+- The post satisfies Council-Related Subject Matter (Definition 2.1a) — via a Named Council Actor (2.1a(a)) OR any of 2.1a's broader conditions (b)–(e), AND
 - No earlier gate (P1–P10) matched.
 
 **Exclusion criteria:**
 - If the post matches any earlier, more specific gate (P1–P10), that category governs instead.
-- If no Named Council Actor is present and none of the mandatory-inclusion conditions apply → Category 2.
+- If the post fails Council-Related Subject Matter (2.1a) entirely, and none of the mandatory-inclusion conditions apply → Category 2.
 - Session-related TV/media coverage and post-session analytical articles are NOT Category 12 — these are Category 9 (see Category 9, Inclusion Criteria).
 
 **Mandatory conditions:** None beyond reaching this point in the Decision Tree without an earlier match.
@@ -523,6 +557,8 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - "Kunlik dayjest: bugun kengash faoliyatida..." (multi-topic digest) → Category 12
 - "Assalomu alaykum, hurmatli kuzatuvchilar!" → Category 12
 - "Kotibiyat bosh mutaxassislari kunlik ish grafigi asosida ishlar tashkil etiladi" (personal specialist schedule, fails 2.7(d)) → Category 12
+- "#162_qonun ... Ekologik nazorat — sog'lom atrof-muhit kafolati!" (a generic law explainer, no deputy named) → Category 12, per 2.1a(b)
+- "O'z hududingiz deputati kimligini bilasizmi? E-kengash portali orqali..." (a portal promotion helping citizens find their deputy) → Category 12, per 2.1a(d)
 
 **Counterexamples (NOT Category 12):**
 - A digest post that describes only ONE specific activity type (e.g., exclusively Formal Deputy Requests sent that day) → classify per that specific activity's category (Category 5), not Category 12, because it is not multi-topic.
@@ -716,11 +752,26 @@ NODE 10 — 24-Issue Investigation Check
   → YES: ASSIGN CATEGORY 4. STOP.
   → NO: proceed to Node 11.
 
-NODE 11 — Named Council Actor Presence Check
-  Is any Named Council Actor (Definition 2.1) present as an actor,
-  participant, author, or subject of the post?
-  → YES: ASSIGN CATEGORY 12. STOP.
-  → NO: proceed to Node 12.
+NODE 11 — Council-Related Subject Matter Check (revised in v2.1)
+  Does the post satisfy Council-Related Subject Matter, Definition 2.1a —
+  i.e., is ANY of the following true?
+    (a) A Named Council Actor (Definition 2.1) is present as an actor,
+        participant, author, or subject; OR
+    (b) The post explains, summarizes, announces, or references any law,
+        legislative act, presidential decree, government resolution, legal
+        right, or legal/regulatory procedure — regardless of whether a
+        deputy is named or a civic-education hashtag is present; OR
+    (c) The post substantively concerns the Kengash institution's own
+        structure, powers, duties, or internal organizational activity,
+        even referenced generically; OR
+    (d) The post substantively concerns deputies' duties, responsibilities,
+        or ethics in a generic sense, or helps citizens identify/contact
+        their deputy; OR
+    (e) The post describes an investigative, informational, or
+        civic-support activity at the mahalla/community level on a
+        governance- or public-service-adjacent topic, even if unattributed.
+  → YES (any of a–e): ASSIGN CATEGORY 12. STOP.
+  → NO (none of a–e apply): proceed to Node 12.
 
 NODE 12 — Template Post Check
   Is this a recurring Template Post per Definition 2.9
@@ -729,9 +780,10 @@ NODE 12 — Template Post Check
   → NO: proceed to Node 13.
 
 NODE 13 — Final Fallback
-  The post contains no Named Council Actor and is not a template post
-  (e.g., legislative news, holiday/birthday greetings, or other content
-  unrelated to council/deputy activity).
+  The post fails Council-Related Subject Matter (2.1a) entirely and is not
+  a template post (e.g., a purely patriotic/calendar greeting, a purely
+  personal congratulatory message, or content genuinely unrelated to law,
+  governance, or council/deputy activity in any way).
   ASSIGN CATEGORY 2. STOP.
 ```
 
@@ -762,15 +814,12 @@ Every classifier output (human or LLM) MUST be validated against the following b
    - Any Category 10 post where the Council-ownership condition (2.7d) is satisfied but task/person specificity (2.7b/c) is only marginally explicit, per the note in Category 10's Mandatory Conditions.
    - Per-channel ratio check: if Category 5 count exceeds 40% of (Category 4 + Category 5 + Category 3) combined for any channel, flag for manual audit of the Cat 4/Cat 5/Cat 3 boundary application.
 
-**V8.** Regression test suite: a fixed set of at least 50 representative posts (drawn from Section 5's Examples and Counterexamples across all categories) must be maintained as a golden dataset. Any classifier update (prompt change, model change) must reproduce the documented category for 100% of golden-dataset posts before deployment.
+**V8.** Regression test suite: a fixed set of at least 50 representative posts (drawn from Section 5's Examples and Counterexamples across all categories) must be maintained as a golden dataset. This set MUST include, at minimum, the 8 corrected Category 12 examples added in v2.1 (Section 0.1) — legal explainers without a named deputy, generic deputy-duty content, Kengash-institutional-function content, and unattributed mahalla-level investigative content — so that any future classifier update cannot silently regress to the v2.0 behavior. Any classifier update (prompt change, model change) must reproduce the documented category for 100% of golden-dataset posts before deployment.
+
+**V9.** Category 2 volume check: if Category 2 exceeds 5% of total classified posts for any reporting period, this is treated as a strong signal of a recurrence of the defect described in Section 0.1, and triggers mandatory human review of a sample of that period's Category 2 assignments before the report is finalized. This threshold is set well above the expected steady-state residual (~1–3%) specifically to catch regressions early rather than only after a full audit.
 
 ---
 
 ## 12. SUPERSESSION STATEMENT
 
-This document, Version 2, is the sole and complete authoritative source for classification of Telegram posts in this monitoring pipeline. Effective immediately upon adoption:
-
-- `reference_document_for_categories.md` is deprecated in full.
-- `categories_instruction.txt` is deprecated in full.
-- Any classifier prompt, human annotator guide, or validation script referencing the deprecated documents must be updated to reference this specification exclusively.
-- Any conflict discovered in the future between this specification and any other document is resolved in favor of this specification, until such time as this specification itself is formally revised to a new version number.
+This document is the sole and complete authoritative source for classification of Telegram posts in this monitoring pipeline.

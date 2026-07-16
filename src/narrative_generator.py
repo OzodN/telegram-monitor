@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import logging
 from collections import Counter
-from typing import Any
+from typing import Any, TypedDict
 
 from src.classification_support import ALLOWED_CATEGORIES, TREND_CATEGORIES
 from src.gemini_client import GeminiClient
@@ -28,6 +28,26 @@ METHODOLOGY_DISCLAIMER = (
     "Ushbu davr tasnifi oldingi davr bilan solishtirish imkonini bermaydi, chunki tasniflash uslubiyati o'zgargan."
 )
 
+CategorySectionsSchema = TypedDict("CategorySectionsSchema", {
+    "2": str,
+    "3": str,
+    "4": str,
+    "5": str,
+    "6": str,
+    "7": str,
+    "8": str,
+    "9": str,
+    "10": str,
+    "11": str,
+    "12": str,
+})
+
+class NarrativeResponseSchema(TypedDict):
+    summary: str
+    category_sections: CategorySectionsSchema
+    final_heading: str
+    final_observation: str
+
 
 def generate_narrative(
     classified_posts: list[ClassifiedPost],
@@ -48,6 +68,7 @@ def generate_narrative(
         },
         operation_name="narrative generation",
         validator=_is_narrative_payload_shape,
+        response_schema=NarrativeResponseSchema,
     )
     category_sections = {category_id: "" for category_id in ALLOWED_CATEGORIES}
     for key, value in payload["category_sections"].items():

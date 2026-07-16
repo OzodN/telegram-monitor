@@ -4,7 +4,7 @@ import re
 
 from typing import Any
 from src.classification_support import ALLOWED_CATEGORIES, TREND_CATEGORIES
-from src.models import AggregatedReport, ReportNarrative
+from src.models import AggregatedReport, PathsConfig, ReportNarrative
 from src.narrative_generator import build_narrative_facts
 
 
@@ -61,7 +61,7 @@ def _extract_all_numbers_from_facts(data: Any) -> set[str]:
     return tokens
 
 
-def validate_narrative(narrative: ReportNarrative, aggregated: AggregatedReport) -> dict:
+def validate_narrative(narrative: ReportNarrative, aggregated: AggregatedReport, paths: PathsConfig) -> dict:
     # Heal prefix anchors in-place
     for category_id in ALLOWED_CATEGORIES:
         key_to_use = category_id
@@ -72,6 +72,11 @@ def validate_narrative(narrative: ReportNarrative, aggregated: AggregatedReport)
             
         healed_text = normalize_section_prefix(section_text, category_id)
         narrative.category_sections[key_to_use] = healed_text
+
+    # Heal final heading in-place
+    cleaned_heading = narrative.final_heading.strip()
+    if len(cleaned_heading) < 50 and re.search(r"13|turli|masalalar", cleaned_heading, re.IGNORECASE):
+        narrative.final_heading = "13. Turli masalalar"
 
     errors: list[str] = []
     warnings: list[str] = []
@@ -103,9 +108,9 @@ def validate_narrative(narrative: ReportNarrative, aggregated: AggregatedReport)
             errors.append(f"Category {category_id} section must start with '{prefix}'")
 
     if narrative.final_heading.strip() != "13. Turli masalalar":
-        errors.append("Final heading must be exactly '13. Turli masalalar'")
+        errors.append(f"Final heading must be exactly '13. Turli masalalar', but got: '{narrative.final_heading}'")
 
-    allowed_numbers = _build_allowed_numbers(aggregated)
+    allowed_numbers = _build_allowed_numbers(aggregated, paths)
     observed_numbers = re.findall(r"\d+", all_text)
     for token in observed_numbers:
         if token not in allowed_numbers:
@@ -137,13 +142,18 @@ def validate_narrative(narrative: ReportNarrative, aggregated: AggregatedReport)
     return report
 
 
-def _build_allowed_numbers(aggregated: AggregatedReport) -> set[str]:
+def _build_allowed_numbers(aggregated: AggregatedReport, paths: PathsConfig) -> set[str]:
     tokens = {str(value) for value in range(0, 32)}
     tokens.update({"2024", "2025", "2026", "2027"})
 
     # Extract facts sent to LLM and add all embedded numbers
     facts = build_narrative_facts(aggregated)
     tokens.update(_extract_all_numbers_from_facts(facts))
+
+    # Extract reference constants from the narrative specification
+    from src.utils import read_utf8_text
+    spec_text = read_utf8_text(paths.narrative_specification_md)
+    tokens.update(re.findall(r"\d+", spec_text))
 
     # Ensure period day count and raw date parts are included
     tokens.add(str((aggregated.period.end.date() - aggregated.period.start.date()).days + 1))

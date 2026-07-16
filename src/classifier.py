@@ -4,7 +4,8 @@ import json
 import logging
 import re
 import time
-from typing import Any
+import concurrent.futures
+from typing import Any, TypedDict
 
 from src.classification_support import (
     ALLOWED_CATEGORIES,
@@ -26,6 +27,23 @@ from src.regression_checks import clean_and_heal_post_fields
 from src.utils import chunked
 
 
+class DatasetReferenceSchema(TypedDict):
+    dataset: str
+    reference_id: str
+
+class ClassificationDecisionSchema(TypedDict):
+    post_id: int
+    category_id: int
+    category_reason: str
+    matched_rule: str
+    evidence: list[str]
+    dataset_references: list[DatasetReferenceSchema]
+    request_marker: str | None
+    category_3_official: str | None
+    category_5_subtype: str | None
+    category_5_problem_type: str | None
+    category_12_subtype: str | None
+
 logger = logging.getLogger(__name__)
 MAX_POST_TEXT_CHARS = 1600
 
@@ -45,20 +63,28 @@ def classify_posts(
     classified: list[ClassifiedPost] = []
     failed_batches: list[int] = []
 
-    for batch_index, batch in enumerate(chunked(posts, config.classification_batch_size), start=1):
-        batch_result = _classify_batch(
-            gemini_client=gemini_client,
-            config=config,
-            batch=batch,
-            batch_index=batch_index,
-            reference_data=reference_data,
-        )
-        if batch_result is None:
-            failed_batches.append(batch_index)
-            continue
+    batches = list(chunked(posts, config.classification_batch_size))
+    
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(config.api_keys)) as executor:
+        futures = [
+            executor.submit(
+                _classify_batch,
+                gemini_client,
+                config,
+                batch,
+                batch_index,
+                reference_data,
+            )
+            for batch_index, batch in enumerate(batches, start=1)
+        ]
 
-        classified.extend(batch_result)
-        logger.info("Classified batch %s with %s posts", batch_index, len(batch))
+        for batch_index, future in enumerate(futures, start=1):
+            batch_result = future.result()
+            if batch_result is None:
+                failed_batches.append(batch_index)
+            else:
+                classified.extend(batch_result)
+                logger.info("Classified batch %s with %s posts", batch_index, len(batches[batch_index - 1]))
 
     if failed_batches:
         logger.error(
@@ -94,6 +120,7 @@ def _classify_batch(
             },
             operation_name=f"classification batch {batch_index}",
             validator=_is_classification_payload_shape,
+            response_schema=list[ClassificationDecisionSchema],
         )
         api_call_seconds = time.perf_counter() - api_started_at
 

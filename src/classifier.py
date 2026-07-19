@@ -108,15 +108,16 @@ def _classify_batch(
     batch_started_at = time.perf_counter()
     try:
         prompt_started_at = time.perf_counter()
-        prompt = _build_classification_prompt(batch, reference_data)
+        system_instruction, user_prompt = _build_classification_prompts(batch, reference_data)
         prompt_build_seconds = time.perf_counter() - prompt_started_at
 
         api_started_at = time.perf_counter()
         payload = gemini_client.generate_json(
-            contents=prompt,
+            contents=user_prompt,
             request_config={
                 "temperature": config.temperature,
                 "response_mime_type": "application/json",
+                "system_instruction": system_instruction,
             },
             operation_name=f"classification batch {batch_index}",
             validator=_is_classification_payload_shape,
@@ -283,10 +284,10 @@ def _classify_batch(
         return None
 
 
-def _build_classification_prompt(
+def _build_classification_prompts(
     batch: list[TelegramPost],
     reference_data: ClassificationReferenceData,
-) -> str:
+) -> tuple[str, str]:
     posts_payload = [
         {
             "post_id": index,
@@ -294,7 +295,7 @@ def _build_classification_prompt(
         }
         for index, post in enumerate(batch, start=1)
     ]
-    return f"""
+    system_instruction = f"""
 You are the production classifier for Telegram monitoring posts.
 
 Use ONLY the authoritative classification specification below as the source of truth.
@@ -342,10 +343,10 @@ REFERENCE DATASET: ISSUES_24 CATALOG
 
 REFERENCE DATASET: LAWS_162 CATALOG
 {reference_data.laws_162_catalog.prompt_text}
-
-POSTS TO CLASSIFY:
-{json.dumps(posts_payload, ensure_ascii=False, separators=(",", ":"))}
 """.strip()
+
+    user_prompt = f"POSTS TO CLASSIFY:\n{json.dumps(posts_payload, ensure_ascii=False, separators=(',', ':'))}"
+    return system_instruction, user_prompt
 
 
 def _compress_post_text(text: str) -> str:

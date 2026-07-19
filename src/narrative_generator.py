@@ -59,12 +59,13 @@ def generate_narrative(
     del classified_posts
 
     narrative_facts = build_narrative_facts(aggregated)
-    prompt = _build_narrative_prompt(narrative_facts, paths)
+    system_instruction, user_prompt = _build_narrative_prompts(narrative_facts, paths)
     payload = gemini_client.generate_json(
-        contents=prompt,
+        contents=user_prompt,
         request_config={
             "temperature": 0,
             "response_mime_type": "application/json",
+            "system_instruction": system_instruction,
         },
         operation_name="narrative generation",
         validator=_is_narrative_payload_shape,
@@ -82,10 +83,10 @@ def generate_narrative(
     )
 
 
-def _build_narrative_prompt(narrative_facts: dict[str, Any], paths: PathsConfig) -> str:
+def _build_narrative_prompts(narrative_facts: dict[str, Any], paths: PathsConfig) -> tuple[str, str]:
     specification_text = read_utf8_text(paths.narrative_specification_md)
 
-    return f"""
+    system_instruction = f"""
 Siz ishlab turgan production Telegram monitoring tizimi uchun rasmiy haftalik izoh yozasiz.
 
 Manba qoidalari:
@@ -103,9 +104,6 @@ Manba qoidalari:
 
 AUTHORITATIVE NARRATIVE SPECIFICATION:
 {specification_text}
-
-FACTS JSON:
-{json.dumps(narrative_facts, ensure_ascii=False, indent=2)}
 
 Qat'iy JSON formati:
 {{
@@ -127,6 +125,10 @@ Qat'iy JSON formati:
   "final_observation": "..."
 }}
 """.strip()
+
+    user_prompt = f"FACTS JSON:\n{json.dumps(narrative_facts, ensure_ascii=False, indent=2)}"
+
+    return system_instruction, user_prompt
 
 
 def build_narrative_facts(aggregated: AggregatedReport) -> dict[str, Any]:
@@ -314,8 +316,16 @@ def _build_category_12_facts(aggregated: AggregatedReport) -> dict[str, Any]:
         if stats.category_counts[12] != sum(stats.category_12_by_subtype.values()):
             subtype_supported = False
 
-    dominant_subtype = None
     total = aggregated.totals_by_category[12]
+    system_subtypes = {}
+    for subtype, count in subtype_counter.items():
+        percent = round(count * 100 / total) if total else 0
+        system_subtypes[subtype] = {
+            "count": count,
+            "percent": percent,
+        }
+
+    dominant_subtype = None
     if total:
         for subtype, count in subtype_counter.items():
             if count * 2 > total:
@@ -324,7 +334,7 @@ def _build_category_12_facts(aggregated: AggregatedReport) -> dict[str, Any]:
 
     return {
         "subtype_supported": subtype_supported,
-        "system_subtypes": dict(subtype_counter),
+        "system_subtypes": system_subtypes,
         "dominant_subtype_anomaly": dominant_subtype,
     }
 

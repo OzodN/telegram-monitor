@@ -47,12 +47,15 @@ gemini:
     # - GEMINI_API_KEY_7
     # - GEMINI_API_KEY_8
     # - GEMINI_API_KEY_9
-    # - GEMINI_API_KEY_10
-    # - GEMINI_API_KEY_11
-    # - GEMINI_API_KEY_12
+    - GEMINI_API_KEY_10
+    - GEMINI_API_KEY_11
+    - GEMINI_API_KEY_12
     - GEMINI_API_KEY_13
     - GEMINI_API_KEY_14
     - GEMINI_API_KEY_15
+    - GEMINI_API_KEY_16
+    - GEMINI_API_KEY_17
+    - GEMINI_API_KEY_18
   model: gemini-3.5-flash
   request_timeout_seconds: 360
   temperature: 0
@@ -61,13 +64,13 @@ classification:
   batch_size: 75
   retry_attempts: 10
   request_delay_seconds: 0
-  retry_backoff_seconds: 15
-  max_backoff_seconds: 90
+  retry_backoff_seconds: 6
+  max_backoff_seconds: 30
   max_requests_per_minute: 5
 
 paths:
-  classification_specification_md: references\classification_specification_v2.1_new.md
-  narrative_specification_md: references\narrative_specification_v1.1.md
+  classification_specification_md: references\classification_specification_v4.md
+  narrative_specification_md: references\narrative_specification_v3.md
   issues_24_md: references\24_ta_masala.md
   laws_162_md: references\Qonunlar_taqsimoti.md
   reference_report_docx: references\Telegram_bo'yicha_haftalik_jadval_22_28_iyun.docx

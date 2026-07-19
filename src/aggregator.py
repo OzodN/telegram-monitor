@@ -63,7 +63,10 @@ def aggregate_report_data(
             )
         )
 
-    overall_average_views = sum(stats.average_views for stats in channel_stats)
+    if channel_stats:
+        overall_average_views = round(sum(stats.average_views for stats in channel_stats) / len(channel_stats))
+    else:
+        overall_average_views = 0
 
     aggregated_report = AggregatedReport(
         period=period,

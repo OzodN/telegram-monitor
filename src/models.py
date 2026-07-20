@@ -163,6 +163,7 @@ class AggregatedReport:
     current_spec_version: str = ""
     prior_period_reference: dict | None = None
     flagged_anomalies: list[dict] = field(default_factory=list)
+    madad_channels: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
         if self.totals_by_category is not None:
@@ -182,6 +183,7 @@ class AggregatedReport:
             "current_spec_version": self.current_spec_version,
             "prior_period_reference": self.prior_period_reference,
             "flagged_anomalies": self.flagged_anomalies,
+            "madad_channels": self.madad_channels,
         }
 
 

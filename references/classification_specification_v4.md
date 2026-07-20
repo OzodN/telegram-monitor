@@ -30,11 +30,11 @@ These terms are used throughout this specification with the exact meaning define
 
 **2.1a Council-Related Subject Matter** — This definition governs the Category 2 / Category 12 boundary specifically (Gates P11 and P13, Section 7). It is broader than, and independent of, Definition 2.1: a post can satisfy 2.1a without containing any Named Council Actor at all. A post satisfies "Council-Related Subject Matter" if its substantive content concerns ANY of the following:
 
-  (a) A Named Council Actor (2.1) is present — this subsumes the old test as one sufficient (but no longer necessary) condition.
-  (b) The post explains, summarizes, announces, or references any law, legislative act, presidential decree, government resolution, legal right, or legal/regulatory procedure — regardless of whether a specific deputy or official is named as performing any monitoring activity. This is true whether or not the post carries a recognized recurring civic-education hashtag (e.g., `#162_qonun`, `#162_ta_qonun`, `#Qonunchilikdagi_yangiliklar`, `#Bilasizmi`, `#Qonun_mazmuni`, `#Qonunlar_bilan_tanishing`, `#Amal_qiling`, `#yodda_tuting`) — such hashtags are a strong confirming signal but their absence does not defeat this test if the substantive content is still legal/legislative in nature.
-  (c) The post substantively concerns the Kengash institution's own structure, powers, duties, function, or internal organizational activity (e.g., "Mahalliy Kengashlarning fuqarolar oldidagi vazifalari," an internal meeting evaluating deputies' performance or request effectiveness), even when referenced generically ("mahalliy kengash," "deputat") rather than via a specifically named individual.
-  (d) The post substantively concerns deputies' duties, responsibilities, ethics, or role in a generic, non-individually-named sense (e.g., `#deputat_vazifasi`, "deputat o'z vazifalarini vijdonan bajarishi kerak"), or explains how citizens can identify or contact their deputy (e.g., an E-Kengash portal promotion).
-  (e) The post describes an investigative, informational, or civic-support activity conducted at the mahalla/community level on a governance-, social-protection-, or public-service-adjacent topic, even if no specific named actor performed it (e.g., an unattributed report of a mahalla polyclinic visit or mahalla banker study).
+ (a) A Named Council Actor (2.1) is present — this subsumes the old test as one sufficient (but no longer necessary) condition.
+ (b) The post explains, summarizes, announces, or references any law, legislative act, presidential decree, government resolution, legal right, or legal/regulatory procedure — regardless of whether a specific deputy or official is named as performing any monitoring activity. This is true whether or not the post carries a recognized recurring civic-education hashtag (e.g., `#162_qonun`, `#162_ta_qonun`, `#Qonunchilikdagi_yangiliklar`, `#Bilasizmi`, `#Qonun_mazmuni`, `#Qonunlar_bilan_tanishing`, `#Amal_qiling`, `#yodda_tuting`) — such hashtags are a strong confirming signal but their absence does not defeat this test if the substantive content is still legal/legislative in nature.
+ (c) The post substantively concerns the Kengash institution's own structure, powers, duties, function, or internal organizational activity (e.g., "Mahalliy Kengashlarning fuqarolar oldidagi vazifalari," an internal meeting evaluating deputies' performance or request effectiveness), even when referenced generically ("mahalliy kengash," "deputat") rather than via a specifically named individual.
+ (d) The post substantively concerns deputies' duties, responsibilities, ethics, or role in a generic, non-individually-named sense (e.g., `#deputat_vazifasi`, "deputat o'z vazifalarini vijdonan bajarishi kerak"), or explains how citizens can identify or contact their deputy (e.g., an E-Kengash portal promotion).
+ (e) The post describes an investigative, informational, or civic-support activity conducted at the mahalla/community level on a governance-, social-protection-, or public-service-adjacent topic, even if no specific named actor performed it (e.g., an unattributed report of a mahalla polyclinic visit or mahalla banker study).
 
 A post satisfying 2.1a is NEVER Category 2. It is Category 12, unless it independently matches a higher-priority gate (P1–P10) first — 2.1a is evaluated only at Gate P11, after all more specific categories have already been ruled out, and does not alter the boundaries of Categories 3–11 in any way.
 
@@ -49,23 +49,23 @@ Category 2 (Gate P13) is reserved exclusively for content that satisfies NONE of
 
 A citizen complaint (мурожаат / murojaat) that is personally investigated by a deputy on-site, WITHOUT one of the above markers, is NOT a Formal Deputy Request.
 
-**2.3 The 24 Issues** — A closed, fixed list of 24 monitoring topics assigned to individual deputies for constituency investigation. The full list is reproduced in **Appendix A**. A post satisfies "24-Issue Investigation" if and only if its primary subject matter matches one of the 24 items in Appendix A, or the post carries the hashtag `#24_masala` (or equivalent Cyrillic rendering `#24_та_масала`) or the tag `#24talik`.
+**2.3 The 24 Issues** — A closed, fixed list of 24 monitoring topics assigned to individual deputies for constituency investigation. The full list is reproduced below in the **ISSUES_24 CATALOG**. A post satisfies "24-Issue Investigation" if and only if its primary subject matter matches one of the 24 items in the ISSUES_24 CATALOG, or the post carries the hashtag `#24_masala` (or equivalent Cyrillic rendering `#24_та_масала`) or the tag `#24talik`.
 
-**2.4 The 162 Assigned Laws** — A closed list of laws individually assigned to specific deputies for implementation monitoring, organized by standing committee. Structure reproduced in **Appendix B**. A post satisfies "162-Law Monitoring" if and only if it names one of the assigned laws (see Appendix B for the committee-organized subject index) AND names the deputy or official responsible for it, OR carries the hashtag `#162` or `#162_ta_qonun`.
+**2.4 The 162 Assigned Laws** — A closed list of laws individually assigned to specific deputies for implementation monitoring, organized by standing committee. The catalog is provided below in the **LAWS_162 CATALOG**. A post satisfies "162-Law Monitoring" if and only if it names one of the assigned laws (see the LAWS_162 CATALOG) AND names the deputy or official responsible for it, OR carries the hashtag `#162` or `#162_ta_qonun`.
 
-**2.5 The 96 Committee Laws** — The subset of laws tracked collectively by standing committees (ДК) rather than individual deputies, per **Appendix B**. A post satisfies "Committee Law Monitoring" if the primary actor is a standing committee (not an individual deputy) and the subject matter is a law from Appendix B.
+**2.5 The 96 Committee Laws** — The subset of laws tracked collectively by standing committees (ДК) rather than individual deputies, from the LAWS_162 CATALOG. A post satisfies "Committee Law Monitoring" if the primary actor is a standing committee (not an individual deputy) and the subject matter is a law from the LAWS_162 CATALOG.
 
 **2.6 Council Session** — A formal, scheduled plenary meeting of the Kengash with a published agenda, distinguished from committee meetings, work groups, or informal gatherings. This includes direct session content as well as media coverage and analytical follow-up of a session (see Category 9, Section 4).
 
 **2.7 Published Work Plan** — A post satisfies "Published Work Plan" if and only if it meets ALL FOUR of the following conditions:
-  (a) specifies a defined future time period (the coming week or month);
-  (b) lists at least one specific, named task or activity to be performed;
-  (c) assigns responsibility for at least one task to a named person or role;
-  (d) **the plan belongs to the Kengash (Council) itself as an institution — NOT a personal work plan or schedule of the kotibiyat mudiri, an individual deputy, or a secretariat specialist.**
+ (a) specifies a defined future time period (the coming week or month);
+ (b) lists at least one specific, named task or activity to be performed;
+ (c) assigns responsibility for at least one task to a named person or role;
+ (d) **the plan belongs to the Kengash (Council) itself as an institution — NOT a personal work plan or schedule of the kotibiyat mudiri, an individual deputy, or a secretariat specialist.**
 
 Condition (d) is an absolute, non-negotiable disqualifier: a post describing the personal schedule or individual work plan of the kotibiyat mudiri, a deputy, or a specialist — however specific — does NOT satisfy Definition 2.7 and cannot be Category 10, regardless of how conditions (a)–(c) are met.
 
-Where a post is unambiguously the Council's own institutional plan (condition (d) clearly satisfied) but is only partially explicit about task specificity (b) or named responsibility (c), classifiers must still verify (b) and (c) are textually present per the Mandatory Conditions in Category 10 below; any resulting ambiguity in degree of detail is recorded as a quality-warning (Pipeline Validation, V7) for the analytical narrative rather than silently omitted, but does not on its own justify treating a post as Category 10 if (a), (b), or (c) is genuinely absent.
+Where a post is unambiguously the Council's own institutional plan (condition (d) clearly satisfied) but is only partially explicit about task specificity (b) or named responsibility (c), classifiers must still verify (b) and (c) are textually present per the Mandatory Conditions in Category 10 below; any resulting ambiguity in degree of detail should be noted in the category_reason rather than silently omitted, but does not on its own justify treating a post as Category 10 if (a), (b), or (c) is genuinely absent.
 
 **2.8 Plan Execution Reference** — A post satisfies "Plan Execution Reference" if it explicitly ties reported activity to a previously published **Council** work plan, via the hashtag `#ish_reja_ijrosi` (or Cyrillic `#иш_режа_ижроси`) or explicit language such as "иш режаси ижросига кўра" / "reja bo'yicha" / "belgilangan topshiriqlar bo'yicha."
 
@@ -91,19 +91,19 @@ Where a post is unambiguously the Council's own institutional plan (condition (d
 **G4.** Hashtags are authoritative signals and are checked before free-text interpretation at every relevant Decision Tree node. If a hashtag and the surrounding text conflict, the hashtag governs, unless the hashtag is objectively misapplied (e.g., `#24_masala` on a post with zero investigative content) — in which case Rule T-ARB-1 (Section 6) applies.
 
 **G5.** The three special officials — hokim, kengash raisi, kotibiyat mudiri — are subject to the following mandatory routing rules, with no exceptions other than those explicitly documented in this specification:
-   - Any activity by these officials that constitutes a **Formal Deputy Request (2.2)** is governed by **Category 5**, NOT Category 3.
-   - Any activity by these officials that constitutes a **24-Issue Investigation (2.3)** is governed by **Category 3**, NOT Category 4.
-   - All other activity by these officials not captured by Gates P1–P8 (Section 7) is governed by **Category 3**, per Definition 2.11.
+ - Any activity by these officials that constitutes a **Formal Deputy Request (2.2)** is governed by **Category 5**, NOT Category 3.
+ - Any activity by these officials that constitutes a **24-Issue Investigation (2.3)** is governed by **Category 3**, NOT Category 4.
+ - All other activity by these officials not captured by Gates P1–P8 (Section 7) is governed by **Category 3**, per Definition 2.11.
 
 **G6.** Category 12 is the terminal category for all council-related content not captured by Categories 3–11. It is NOT a first-choice category and must never be assigned before the Decision Tree has been fully evaluated through Categories 3–11.
 
 **G7.** Cross-posted content: if the identical post is published independently on multiple monitored channels, each publication is classified independently and identically (same category on each channel), and each is counted as a separate post in that channel's statistics.
 
-**G8.** Language: classification is performed identically regardless of whether the post is written in Uzbek Cyrillic, Uzbek Latin, or Russian. All keyword and hashtag matching in this specification applies across all three scripts/languages; Appendix C provides the canonical cross-script matching table.
+**G8.** Language: classification is performed identically regardless of whether the post is written in Uzbek Cyrillic, Uzbek Latin, or Russian. All keyword and hashtag matching in this specification applies across all three scripts/languages; 
 
-**G9.** Media-only posts (image, video, or document with no substantive caption text): classify based on caption text if present. If no caption text exists, assign Category 12 and flag for human review (see Pipeline Validation).
+**G9.** Media-only posts (image, video, or document with no substantive caption text): classify based on caption text if present. If no caption text exists, assign Category 12 and explain this in the category_reason.
 
-**G10.** Every classification output MUST include a non-empty `category_reason` field of 1–2 sentences citing the specific textual evidence (keyword, hashtag, or actor) that determined the assignment. A classification with an empty `category_reason` is invalid output and must be rejected by the pipeline's validation layer.
+**G10.** Every classification output MUST include a non-empty `category_reason` field of 1–2 sentences citing the specific textual evidence (keyword, hashtag, or actor) that determined the assignment. A classification with an empty `category_reason` is invalid output.
 
 ---
 
@@ -192,17 +192,17 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - **EDGE-3.1:** The kotibiyat mudiri conducts a field visit alongside the kengash raisi to inspect a factory, with no explicit deputy-role language present → **Category 3** (per the broadened scope of Definition 2.11; explicit deputy-role language is not required).
 - **EDGE-3.2 (Vacant District Exception):** A vacant electoral district is temporarily served by the raisi or kotibiyat mudiri handling voter complaints on behalf of the vacant seat → **Category 4** applies, per the explicit provision in the source instructions for vacant-district coverage, **provided deputy-role language is present** in the post. If deputy-role language is absent in this scenario, the general Category 3 default (per Inclusion Criteria above) applies instead.
 - **EDGE-3.3 (Primary-activity test against Category 6 — v3.0):** Gate P7 (Category 6) is evaluated before Gate P9 (Category 3) in the Precedence Hierarchy, which means a post naming a specific 162-list law and a specific responsible actor is, by default, captured at P7 before the special-official test at P9 is ever reached — even when the actor is one of the three special officials. This is correct and intended when law-monitoring is genuinely the post's primary, standalone subject (Category 6 governs, per the ordinary rule). It is NOT correct when the post's primary, headline subject is a 24-Issue-style investigation personally led by the special official, and the named law appears only as a secondary "legal awareness" addendum delivered incidentally during that same investigation — in that case, Category 3 governs despite the law being named, per G5's intent that all other special-official activity routes to Category 3. See the worked example and EDGE-6.3 in Category 6.
-   - **Worked example:** "Kotibiyat mudiri N.Ubaydullayev, deputatlar O.Yusupov va Z.Xoji-akbar bilan birgalikda [mahalla]da maishiy xizmat ko'rsatish sohasi subyektlari faoliyatini joyiga chiqib o'rgandi... Shuningdek, mahalliy Kengash deputatlari faoliyatining 24 ta ustuvor yo'nalishi asosida... ishlar o'rganildi. ...eng muhim qonunlarni targ'ib etish rejasi doirasida 'Tadbirkorlik faoliyati erkinligi...' qonunining mazmun-mohiyati yuzasidan huquqiy tushuntirishlar berildi" → **Category 3** (kotibiyat mudiri is the lead actor; the post opens with and is substantively about the 24-Issue-style investigation; the law-awareness segment is a secondary addendum, not the post's primary subject).
+ - **Worked example:** "Kotibiyat mudiri N.Ubaydullayev, deputatlar O.Yusupov va Z.Xoji-akbar bilan birgalikda [mahalla]da maishiy xizmat ko'rsatish sohasi subyektlari faoliyatini joyiga chiqib o'rgandi... Shuningdek, mahalliy Kengash deputatlari faoliyatining 24 ta ustuvor yo'nalishi asosida... ishlar o'rganildi. ...eng muhim qonunlarni targ'ib etish rejasi doirasida 'Tadbirkorlik faoliyati erkinligi...' qonunining mazmun-mohiyati yuzasidan huquqiy tushuntirishlar berildi" → **Category 3** (kotibiyat mudiri is the lead actor; the post opens with and is substantively about the 24-Issue-style investigation; the law-awareness segment is a secondary addendum, not the post's primary subject).
 
 ---
 
 ### CATEGORY 4 — Deputy Investigations Regarding the 24 Issues
 
-**Purpose:** Track investigative field activity by regular deputies, the kotibiyat mudiri o'rinbosari, and secretariat specialists (i.e., all actors OTHER than the hokim, kengash raisi, and kotibiyat mudiri themselves) regarding the 24 officially monitored issues (Appendix A), plus the documented vacant-district exception for the three special officials.
+**Purpose:** Track investigative field activity by regular deputies, the kotibiyat mudiri o'rinbosari, and secretariat specialists (i.e., all actors OTHER than the hokim, kengash raisi, and kotibiyat mudiri themselves) regarding the 24 officially monitored issues (ISSUES_24 CATALOG), plus the documented vacant-district exception for the three special officials.
 
 **Inclusion criteria (ALL must be true):**
 - The post describes an investigation, inspection, field visit, or study, AND
-- The primary subject matches one of the 24 Issues in Appendix A, OR the post carries the `#24_masala` / `#24_та_масала` / `#24talik` hashtag, AND
+- The primary subject matches one of the 24 Issues in ISSUES_24 CATALOG, OR the post carries the `#24_masala` / `#24_та_масала` / `#24talik` hashtag, AND
 - The actor is a regular deputy, a kotibiyat mudiri o'rinbosari, or a secretariat specialist — OR the actor is the raisi/kotibiyat mudiri acting under the vacant-electoral-district substitute-duty exception (EDGE-3.2) with deputy-role language present, AND
 - The post does NOT contain a Formal Deputy Request marker (2.2) — if it does, Category 5 governs (Gate P6 precedes P10).
 
@@ -213,7 +213,7 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - The primary actor is a standing committee (ДК), not an individual deputy → Category 7 (Gate P2 precedes P10 absolutely).
 - The investigation is explicitly and genuinely a Plan Execution Reference tied to the **Council's own plan** (2.8) → Category 11 (Gate P8 precedes P10). Note per the example below: a hashtag alone does not satisfy this exclusion if the underlying content is an individual investigation, not Council-plan execution.
 
-**Mandatory conditions:** At least one of the 24 Issues (Appendix A) must be identifiable as the primary subject, OR the explicit hashtag must be present. General-purpose "investigation" language without a matching 24-issue topic does not qualify.
+**Mandatory conditions:** At least one of the 24 Issues (ISSUES_24 CATALOG) must be identifiable as the primary subject, OR the explicit hashtag must be present. General-purpose "investigation" language without a matching 24-issue topic does not qualify.
 
 **Examples (correctly Category 4):**
 - "Deputat Sh.Erkinov tomonidan Yangi hayot MFYda ijtimoiy xodim faoliyati o'rganildi" (Issue #5 — social worker service quality; actor is a regular deputy) → Category 4
@@ -228,7 +228,7 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 
 **Edge cases:**
 - **EDGE-4.1:** A citizen's complaint (murojaat) investigated on-site by a regular deputy, with no Formal Request marker → Category 4 (per Definition 2.2, an investigated complaint without a formal request marker does NOT qualify for Category 5).
-- **EDGE-4.2:** A post investigates a topic not explicitly listed in the 24 Issues but structurally similar (e.g., internet connectivity in mahallas) → Category 12 (does not match Appendix A; absent the `#24_masala` hashtag, default to catch-all).
+- **EDGE-4.2:** A post investigates a topic not explicitly listed in the 24 Issues but structurally similar (e.g., internet connectivity in mahallas) → Category 12 (does not match the ISSUES_24 CATALOG; absent the `#24_masala` hashtag, default to catch-all).
 - **EDGE-4.3:** The `#24_masala` hashtag is present but the post content describes a session announcement with no investigative content → Rule T-ARB-1 (Section 6) applies: hashtag is disregarded as misapplied, and the post is classified per its actual content (likely Category 9).
 
 ---
@@ -267,13 +267,13 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 
 ### CATEGORY 6 — Monitoring Implementation of Assigned 162 Laws
 
-**Purpose:** Track individual-level monitoring of the 162 laws formally assigned per Appendix B, by a deputy or by an official (kotibiyat mudiri or kotibiyat mutaxassisi) acting individually.
+**Purpose:** Track individual-level monitoring of the 162 laws formally assigned per LAWS_162 CATALOG, by a deputy or by an official (kotibiyat mudiri or kotibiyat mutaxassisi) acting individually.
 
 **Inclusion criteria (ALL must be true):**
 - A responsible party is attached to the law, and the post describes work carried out in the study of the implementation of that law, AND
-- The post names a specific law from the 162-law list (Appendix B) OR carries the `#162` / `#162_ta_qonun` hashtag, AND
+- The post names a specific law from the 162-law list (LAWS_162 CATALOG) OR carries the `#162` / `#162_ta_qonun` hashtag, AND
 - **A specific individual — a deputy, kotibiyat mudiri, or kotibiyat mutaxassisi (secretariat specialist) — is named as the actor personally performing the monitoring activity (not a committee acting as a body).** This aligns Category 6's actor test with Definition 2.4's original "deputy or official" wording; prior wording that restricted this to "individual deputy" only was an unintended narrowing and is corrected here.
-- The actor is confirmed (per Appendix B, the hashtag, or explicit on-site study language) to have this law's monitoring responsibility, AND
+- The actor is confirmed (per the LAWS_162 CATALOG, the hashtag, or explicit on-site study language) to have this law's monitoring responsibility, AND
 - The post does not contain a Formal Deputy Request marker (if it does, Category 5 governs per Gate P6, which precedes P7), AND
 - **If the actor is one of the three special officials (hokim, kengash raisi, kotibiyat mudiri), the law-monitoring content must be the post's primary, standalone subject — not a secondary/incidental addendum within a post whose primary subject is a 24-Issue-style investigation personally led by that official. See EDGE-6.3 below and EDGE-3.3 in Category 3.**
 
@@ -305,7 +305,7 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 
 ### CATEGORY 7 — Standing Committee (ДК) Activities
 
-**Purpose:** Track all activity where a named standing committee is the primary actor, including meetings, hearings, and monitoring of the 96 committee-tracked laws (Appendix B) — regardless of whether that law also appears on the 162-law individual-deputy list.
+**Purpose:** Track all activity where a named standing committee is the primary actor, including meetings, hearings, and monitoring of the 96 committee-tracked laws — regardless of whether that law also appears on the 162-law individual-deputy list.
 
 **Inclusion criteria (ALL must be true):**
 - The primary actor is a named permanent standing committee (доимий комиссия / ДК), AND
@@ -316,7 +316,7 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - The primary actor is an individual deputy, not the committee as a body → Category 4 or Category 6, depending on subject matter (or Category 3 if the individual is one of the three special officials, per G5).
 - The post is about the Expert Group or Youth Advisory Group, not a standing committee → Category 8 (Gate P3).
 
-**Mandatory conditions:** The committee must be explicitly named (e.g., "Маҳаллий бюджет ... доимий комиссияси") — a bare reference to "комиссия" without specifying which permanent committee does not qualify; verify against the five standing committees listed in Appendix B.
+**Mandatory conditions:** The committee must be explicitly named (e.g., "Маҳаллий бюджет ... доимий комиссияси") — a bare reference to "комиссия" without specifying which permanent committee does not qualify; verify that it is a permanent standing committee, not a temporary commission.
 
 **Examples (correctly Category 7):**
 - "Маҳаллий бюджет, тадбиркорликни ривожлантириш ва иқтисодий ислоҳотлар масалалари бўйича доимий комиссия йиғилишида давлат-хусусий шериклик масалалари кўриб чиқилди" → Category 7
@@ -327,7 +327,7 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - "Doimiy komissiya a'zosi M.Ergasheva shaxsan mahallada tekshiruv o'tkazdi" (individual committee member acting alone, not the committee as a body) → Category 4 or Category 6, depending on subject
 
 **Edge cases:**
-- **EDGE-7.1:** A standing committee investigates a topic that is also one of the 24 Issues (Appendix A) → Category 7 still governs (Gate P2 precedes P10 absolutely; committee actor identity overrides topic-based categories).
+- **EDGE-7.1:** A standing committee investigates a topic that is also one of the 24 Issues (ISSUES_24 CATALOG) → Category 7 still governs (Gate P2 precedes P10 absolutely; committee actor identity overrides topic-based categories).
 - **EDGE-7.2:** The Regulations and Ethics Committee (Регламент ва одоб комиссияси), whose members also sit on other committees per the source rules, conducts joint activity → classify under whichever committee is explicitly named as conducting the activity in the post text.
 - **EDGE-7.3 (Committee self-description/composition posts — v3.0):** A post in which a standing committee itself narrates its own composition, membership, and ongoing oversight mandate (e.g., naming the committee's chair, secretary, and members and describing the systematic oversight function they collectively carry out), without describing one discrete meeting or field visit, still satisfies Category 7's "report" test in the Inclusion Criteria, **provided the committee — not a single named individual — is presented as the actor.** This is distinct from the mandatory Category 12 "deputy introduction/profile post" rule, which applies only when a single, individually named person is being profiled; a committee describing itself is never a "deputy profile post," regardless of how much it resembles one in structure (composition/roster + mandate description). **Worked example:** "Doimiy komissiya raisi, kotibi va a'zolari tomonidan ijtimoiy sohada tizimli nazorat ishlari amalga oshirilmoqda... Komissiya tarkibi: [roster]" → Category 7, for every standing committee this pattern is applied to, not only the committee(s) where it happens to have been applied correctly in a given period.
 
@@ -407,7 +407,7 @@ Any deviation from this identity indicates a pipeline aggregation defect and mus
 - The post is primarily a report on past completed activity, even if it also mentions future tasks in passing → Category 11 (per Rule T-ARB-4 in Section 6, when a single post mixes past-review and future-planning content, apply the Primary Verb Test).
 - The post is a session agenda (future meeting topics) rather than a work plan (future operational tasks) → Category 9.
 
-**Mandatory conditions:** All four elements of Definition 2.7 must be textually verifiable, including condition (d) — the plan must be attributable to the Council itself. Absence of any one element disqualifies the post from Category 10. Where the Council-ownership condition (d) is clearly satisfied but the level of task/person detail is only partially explicit, classifiers record this as a quality-warning per Pipeline Validation (V7) for the analytical narrative, rather than reclassifying the post, provided (a), (b), and (c) are still minimally identifiable in the text.
+**Mandatory conditions:** All four elements of Definition 2.7 must be textually verifiable, including condition (d) — the plan must be attributable to the Council itself. Absence of any one element disqualifies the post from Category 10. Where the Council-ownership condition (d) is clearly satisfied but the level of task/person detail is only partially explicit, classifiers should note this in the category_reason for the analytical narrative, rather than reclassifying the post, provided (a), (b), and (c) are still minimally identifiable in the text.
 
 **Examples (correctly Category 10):**
 - "Kelgusi haftaga mo'ljallangan **Kengash** ish rejasi: 1) Kotibiyat mutaxassisi A.Yusupov — 15-mahallada aholi qabuli (Dushanba); 2) Deputat M.Qosimov — maktab holatini o'rganish (Chorshanba)" → Category 10 (a Council-level plan that assigns specific tasks to named persons)
@@ -522,9 +522,9 @@ These rules resolve residual ambiguity that content analysis alone cannot elimin
 
 **T-ARB-5 (Multiple Simultaneous Actors):** If a post names both an individual deputy AND a standing committee as co-actors in the same activity, Category 7 governs (committee identity is absolute per Gate P2), unless the committee's involvement is merely incidental (e.g., "committee member M, acting individually, also occasionally attends committee sessions") — in which case classify per the individual deputy's activity.
 
-**T-ARB-6 (Ambiguous Script/Language Matching):** All hashtag and keyword matching (Appendix C) must be performed case-insensitively and across Cyrillic/Latin script variants. If a post uses non-standard transliteration not covered by Appendix C, classifiers must apply phonetic equivalence matching before defaulting to "no match."
+**T-ARB-6 (Ambiguous Script/Language Matching):** All hashtag and keyword matching must be performed case-insensitively and across Cyrillic/Latin script variants. If a post uses non-standard transliteration not covered by standard rules, classifiers must apply phonetic equivalence matching before defaulting to "no match."
 
-**T-ARB-7 (Unresolvable Residual Ambiguity):** In the rare case that a post cannot be resolved to a single category after applying the full Decision Tree and all T-ARB rules above, default to Category 12 and flag the post for mandatory human review (see Pipeline Validation). Category 12 is the specification's designated safe default; it must never be Category 2, Category 4, or Category 5 in cases of genuine unresolved ambiguity, because those categories carry specific compliance-tracking weight that a miscategorized ambiguous post would distort.
+**T-ARB-7 (Unresolvable Residual Ambiguity):** In the rare case that a post cannot be resolved to a single category after applying the full Decision Tree and all T-ARB rules above, default to Category 12 and explain the ambiguity in the category_reason. Category 12 is the specification's designated safe default; it must never be Category 2, Category 4, or Category 5 in cases of genuine unresolved ambiguity, because those categories carry specific compliance-tracking weight that a miscategorized ambiguous post would distort.
 
 ---
 
@@ -535,135 +535,135 @@ Apply the following procedure to every post, in exact node order. Stop at the fi
 
 ```
 NODE 1 — Madad NNT Check
-  Does the post mention "Madad" NNT in any context?
-  → YES: ASSIGN CATEGORY 12. STOP.
-  → NO: proceed to Node 2.
+ Does the post mention "Madad" NNT in any context?
+ → YES: ASSIGN CATEGORY 12. STOP.
+ → NO: proceed to Node 2.
 
 NODE 2 — Standing Committee Actor Check
-  Is the primary actor a named permanent standing committee (ДК),
-  per the five committees in Appendix B §9.2? This includes a
-  committee narrating its own composition and ongoing oversight
-  mandate (v3.0, EDGE-7.3) — not only discrete meetings or field
-  visits. Do not default this pattern to the "profile post" rule,
-  which applies only to individually named persons, never to a
-  committee describing itself.
-  (Apply T-ARB-5 if a committee AND an individual deputy are co-named.)
-  → YES: ASSIGN CATEGORY 7. STOP.
-  → NO: proceed to Node 3.
+ Is the primary actor a named permanent standing committee (ДК),
+ (e.g., Mahaliy byudjet, Ta'lim, Korrupsiya, etc.)? This includes a
+ committee narrating its own composition and ongoing oversight
+ mandate (v3.0, EDGE-7.3) — not only discrete meetings or field
+ visits. Do not default this pattern to the "profile post" rule,
+ which applies only to individually named persons, never to a
+ committee describing itself.
+ (Apply T-ARB-5 if a committee AND an individual deputy are co-named.)
+ → YES: ASSIGN CATEGORY 7. STOP.
+ → NO: proceed to Node 3.
 
 NODE 3 — Expert/Youth Advisory Group Actor Check
-  Is the primary actor a named, formally constituted Expert Group
-  or Youth Advisory Group, with substantive content describing its
-  activity (apply EDGE-8.2 if the hashtag is present without content)?
-  → YES: ASSIGN CATEGORY 8. STOP.
-  → NO: proceed to Node 4.
+ Is the primary actor a named, formally constituted Expert Group
+ or Youth Advisory Group, with substantive content describing its
+ activity (apply EDGE-8.2 if the hashtag is present without content)?
+ → YES: ASSIGN CATEGORY 8. STOP.
+ → NO: proceed to Node 4.
 
 NODE 4 — Council Session Check
-  Does the post concern an official Kengash plenary session — its
-  announcement, agenda, proceedings, decisions, preparation language,
-  TV/media broadcast coverage, or post-session analytical follow-up —
-  per Definition 2.6 and Category 9's Inclusion Criteria?
-  → YES: ASSIGN CATEGORY 9. STOP.
-  → NO: proceed to Node 5.
+ Does the post concern an official Kengash plenary session — its
+ announcement, agenda, proceedings, decisions, preparation language,
+ TV/media broadcast coverage, or post-session analytical follow-up —
+ per Definition 2.6 and Category 9's Inclusion Criteria?
+ → YES: ASSIGN CATEGORY 9. STOP.
+ → NO: proceed to Node 5.
 
 NODE 5 — Published Work Plan Check
-  Does the post satisfy ALL FOUR elements of Definition 2.7
-  (future period + specific task + named responsible person +
-  the plan belongs to the Council itself, not an individual)?
-  **v3.0 (EDGE-10.2): a plan specifying only a single calendar day
-  (a "daily plan") categorically fails condition (a) — the coming
-  week or month — regardless of Council-ownership framing. Check
-  the time-period condition FIRST and independently; do not let
-  Council-ownership framing substitute for it.**
-  If the post mixes past-review and future-planning content,
-  apply Rule T-ARB-4 (Primary Verb Test) to decide.
-  → YES: ASSIGN CATEGORY 10. STOP.
-  → NO: proceed to Node 6.
+ Does the post satisfy ALL FOUR elements of Definition 2.7
+ (future period + specific task + named responsible person +
+ the plan belongs to the Council itself, not an individual)?
+ **v3.0 (EDGE-10.2): a plan specifying only a single calendar day
+ (a "daily plan") categorically fails condition (a) — the coming
+ week or month — regardless of Council-ownership framing. Check
+ the time-period condition FIRST and independently; do not let
+ Council-ownership framing substitute for it.**
+ If the post mixes past-review and future-planning content,
+ apply Rule T-ARB-4 (Primary Verb Test) to decide.
+ → YES: ASSIGN CATEGORY 10. STOP.
+ → NO: proceed to Node 6.
 
 NODE 6 — Formal Deputy Request Check
-  Does the post contain a Formal Deputy Request marker (Definition 2.2)
-  — either an outbound request or an explicit result-of-request marker?
-  → YES: ASSIGN CATEGORY 5. STOP.
-  → NO: proceed to Node 7.
+ Does the post contain a Formal Deputy Request marker (Definition 2.2)
+ — either an outbound request or an explicit result-of-request marker?
+ → YES: ASSIGN CATEGORY 5. STOP.
+ → NO: proceed to Node 7.
 
 NODE 7 — 162-Law / Individual Monitoring Check
-  Does the post name a law from Appendix B (or carry #162/#162_ta_qonun)
-  AND name a specific individual — a deputy, kotibiyat mudiri, or
-  kotibiyat mutaxassisi — with confirmed assignment responsibility
-  for that law (v3.0: "official," not only "deputy," per Definition 2.4)?
-  Apply T-ARB-1 if hashtag present but content absent.
-  **v3.0 (EDGE-6.3): if the named individual is one of the three special
-  officials, additionally check whether law-monitoring is the post's
-  PRIMARY subject or only a secondary/incidental addendum within a
-  post whose primary, headline content is a 24-Issue-style investigation
-  led by that official. If secondary/incidental → answer NO here and
-  proceed to Node 8 (this will route to Node 9, Category 3, per EDGE-3.3).**
-  → YES (law-monitoring is the primary subject): ASSIGN CATEGORY 6. STOP.
-  → NO: proceed to Node 8.
+ Does the post name a law from the LAWS_162 CATALOG (or carry #162/#162_ta_qonun)
+ AND name a specific individual — a deputy, kotibiyat mudiri, or
+ kotibiyat mutaxassisi — with confirmed assignment responsibility
+ for that law (v3.0: "official," not only "deputy," per Definition 2.4)?
+ Apply T-ARB-1 if hashtag present but content absent.
+ **v3.0 (EDGE-6.3): if the named individual is one of the three special
+ officials, additionally check whether law-monitoring is the post's
+ PRIMARY subject or only a secondary/incidental addendum within a
+ post whose primary, headline content is a 24-Issue-style investigation
+ led by that official. If secondary/incidental → answer NO here and
+ proceed to Node 8 (this will route to Node 9, Category 3, per EDGE-3.3).**
+ → YES (law-monitoring is the primary subject): ASSIGN CATEGORY 6. STOP.
+ → NO: proceed to Node 8.
 
 NODE 8 — Plan Execution Reference Check
-  Does the post carry a Plan Execution Reference marker (Definition 2.8
-  — #ish_reja_ijrosi or equivalent language), AND is the activity
-  genuinely the Council's own institutional plan execution (NOT the
-  personal work of the kengash raisi, kotibiyat mudiri, or an
-  individual deputy/specialist)?
-  Apply T-ARB-3 if the post could also be a first-time Cat 6 report.
-  → YES: ASSIGN CATEGORY 11. STOP.
-  → NO: proceed to Node 9.
+ Does the post carry a Plan Execution Reference marker (Definition 2.8
+ — #ish_reja_ijrosi or equivalent language), AND is the activity
+ genuinely the Council's own institutional plan execution (NOT the
+ personal work of the kengash raisi, kotibiyat mudiri, or an
+ individual deputy/specialist)?
+ Apply T-ARB-3 if the post could also be a first-time Cat 6 report.
+ → YES: ASSIGN CATEGORY 11. STOP.
+ → NO: proceed to Node 9.
 
 NODE 9 — Special-Official Activity Check
-  Is the actor the hokim, kengash raisi, or kotibiyat mudiri
-  (not the o'rinbosari/assistant), AND is this NOT the vacant-district
-  substitute-duty scenario with deputy-role language present (EDGE-3.2)?
-  (Per G5, this includes 24-Issue investigations personally conducted
-  by these three officials — no deputy-role language is required.)
-  → YES: ASSIGN CATEGORY 3. STOP.
-  → NO: proceed to Node 10.
+ Is the actor the hokim, kengash raisi, or kotibiyat mudiri
+ (not the o'rinbosari/assistant), AND is this NOT the vacant-district
+ substitute-duty scenario with deputy-role language present (EDGE-3.2)?
+ (Per G5, this includes 24-Issue investigations personally conducted
+ by these three officials — no deputy-role language is required.)
+ → YES: ASSIGN CATEGORY 3. STOP.
+ → NO: proceed to Node 10.
 
 NODE 10 — 24-Issue Investigation Check
-  Does the post describe an investigation/inspection/study whose
-  primary subject matches one of the 24 Issues (Appendix A), OR
-  carry the #24_masala hashtag with corresponding content, performed
-  by a regular deputy, a kotibiyat mudiri o'rinbosari, a secretariat
-  specialist, or the raisi/kotibiyat mudiri under the vacant-district
-  exception (EDGE-3.2, with deputy-role language present)?
-  Apply T-ARB-1 if hashtag present but content absent.
-  → YES: ASSIGN CATEGORY 4. STOP.
-  → NO: proceed to Node 11.
+ Does the post describe an investigation/inspection/study whose
+ primary subject matches one of the 24 Issues (ISSUES_24 CATALOG), OR
+ carry the #24_masala hashtag with corresponding content, performed
+ by a regular deputy, a kotibiyat mudiri o'rinbosari, a secretariat
+ specialist, or the raisi/kotibiyat mudiri under the vacant-district
+ exception (EDGE-3.2, with deputy-role language present)?
+ Apply T-ARB-1 if hashtag present but content absent.
+ → YES: ASSIGN CATEGORY 4. STOP.
+ → NO: proceed to Node 11.
 
 NODE 11 — Council-Related Subject Matter Check
-  Does the post satisfy Council-Related Subject Matter, Definition 2.1a —
-  i.e., is ANY of the following true?
-    (a) A Named Council Actor (Definition 2.1) is present as an actor,
-        participant, author, or subject; OR
-    (b) The post explains, summarizes, announces, or references any law,
-        legislative act, presidential decree, government resolution, legal
-        right, or legal/regulatory procedure — regardless of whether a
-        deputy is named or a civic-education hashtag is present; OR
-    (c) The post substantively concerns the Kengash institution's own
-        structure, powers, duties, or internal organizational activity,
-        even referenced generically; OR
-    (d) The post substantively concerns deputies' duties, responsibilities,
-        or ethics in a generic sense, or helps citizens identify/contact
-        their deputy; OR
-    (e) The post describes an investigative, informational, or
-        civic-support activity at the mahalla/community level on a
-        governance- or public-service-adjacent topic, even if unattributed.
-  → YES (any of a–e): ASSIGN CATEGORY 12. STOP.
-  → NO (none of a–e apply): proceed to Node 12.
+ Does the post satisfy Council-Related Subject Matter, Definition 2.1a —
+ i.e., is ANY of the following true?
+ (a) A Named Council Actor (Definition 2.1) is present as an actor,
+ participant, author, or subject; OR
+ (b) The post explains, summarizes, announces, or references any law,
+ legislative act, presidential decree, government resolution, legal
+ right, or legal/regulatory procedure — regardless of whether a
+ deputy is named or a civic-education hashtag is present; OR
+ (c) The post substantively concerns the Kengash institution's own
+ structure, powers, duties, or internal organizational activity,
+ even referenced generically; OR
+ (d) The post substantively concerns deputies' duties, responsibilities,
+ or ethics in a generic sense, or helps citizens identify/contact
+ their deputy; OR
+ (e) The post describes an investigative, informational, or
+ civic-support activity at the mahalla/community level on a
+ governance- or public-service-adjacent topic, even if unattributed.
+ → YES (any of a–e): ASSIGN CATEGORY 12. STOP.
+ → NO (none of a–e apply): proceed to Node 12.
 
 NODE 12 — Template Post Check
-  Is this a recurring Template Post per Definition 2.9
-  (greeting, social media promotion, generic schedule)?
-  → YES: ASSIGN CATEGORY 12. STOP.
-  → NO: proceed to Node 13.
+ Is this a recurring Template Post per Definition 2.9
+ (greeting, social media promotion, generic schedule)?
+ → YES: ASSIGN CATEGORY 12. STOP.
+ → NO: proceed to Node 13.
 
 NODE 13 — Final Fallback
-  The post fails Council-Related Subject Matter (2.1a) entirely and is not
-  a template post (e.g., a purely patriotic/calendar greeting, a purely
-  personal congratulatory message, or content genuinely unrelated to law,
-  governance, or council/deputy activity in any way).
-  ASSIGN CATEGORY 2. STOP.
+ The post fails Council-Related Subject Matter (2.1a) entirely and is not
+ a template post (e.g., a purely patriotic/calendar greeting, a purely
+ personal congratulatory message, or content genuinely unrelated to law,
+ governance, or council/deputy activity in any way).
+ ASSIGN CATEGORY 2. STOP.
 ```
 
 **This decision tree is exhaustive.** Every post reaches a terminal assignment at exactly one node. No post can pass through all 13 nodes without receiving a category, because Node 13 is an unconditional final assignment.

@@ -18,6 +18,13 @@ def aggregate_report_data(
     period: ReportPeriod,
     reference_data: ClassificationReferenceData,
 ) -> AggregatedReport:
+    madad_councils = set()
+    for cp in classified_posts:
+        if cp.category_id == 12:
+            text = cp.post.text.casefold()
+            if "madad" in text or "мадад" in text:
+                madad_councils.add(cp.post.source_channel)
+    
     channel_posts: dict[str, list[ClassifiedPost]] = {channel.council_name: [] for channel in channels}
     for item in classified_posts:
         channel_posts.setdefault(item.post.source_channel, []).append(item)
@@ -78,6 +85,7 @@ def aggregate_report_data(
         current_spec_version=_derive_spec_version(reference_data),
         prior_period_reference=None,
         flagged_anomalies=[],
+        madad_channels=sorted(madad_councils),
     )
     _assert_aggregation_identity(aggregated_report)
     return aggregated_report

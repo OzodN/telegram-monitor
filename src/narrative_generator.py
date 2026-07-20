@@ -13,19 +13,19 @@ from src.utils import read_utf8_text
 
 logger = logging.getLogger(__name__)
 PROHIBITED_PHRASES = [
-    "ehtimol",
-    "aftidan",
-    "ko'rinishicha",
-    "ko‘rinishicha",
-    "bu shundan dalolat beradi",
-    "sababi shuki",
-    "balki",
-    "deb taxmin qilinadi",
-    "buning sababi",
+    "эҳтимол",
+    "афтидан",
+    "кўринишича",
+    "бу шундан далолат беради",
+    "сабаби шуки",
+    "балки",
+    "деб тахмин қилинади",
+    "бунинг сабаби",
+    "аномалия",
 ]
-TREND_DISCLAIMER = "Oldingi davr bo'yicha taqqoslash uchun baza mavjud emas."
+TREND_DISCLAIMER = "Олдинги давр бўйича таққослаш учун база мавжуд эмас."
 METHODOLOGY_DISCLAIMER = (
-    "Ushbu davr tasnifi oldingi davr bilan solishtirish imkonini bermaydi, chunki tasniflash uslubiyati o'zgargan."
+    "Ушбу давр таснифи олдинги давр билан солиштириш имконини бермайди, чунки таснифлаш услубияти ўзгарган."
 )
 
 CategorySectionsSchema = TypedDict("CategorySectionsSchema", {
@@ -87,41 +87,42 @@ def _build_narrative_prompts(narrative_facts: dict[str, Any], paths: PathsConfig
     specification_text = read_utf8_text(paths.narrative_specification_md)
 
     system_instruction = f"""
-Siz ishlab turgan production Telegram monitoring tizimi uchun rasmiy haftalik izoh yozasiz.
+Сиз ишлаб турган production Telegram мониторинг тизими учун расмий ҳафталик изоҳ ёзасиз.
 
-Manba qoidalari:
-- Quyidagi narrative specification yagona authoritative hujjatdir.
-- Faqat FACTS JSON ichidagi ma'lumotlardan foydalaning.
-- Hech qanday sabab, motiv, siyosiy talqin, yashirin trend yoki yetishmayotgan faktni ixtiro qilmang.
-- Hisob-kitob qilmang. Barcha sonlar va foizlar FACTS JSON ichida tayyor berilgan.
-- Qo'llab-quvvatlanmagan maydonlar bo'yicha da'vo qilmang.
-- Quyidagi so'z va iboralarni ishlatmang: {", ".join(PROHIBITED_PHRASES)}.
-- Band 10 va 11 da trend faqat trend_status=available bo'lsa yoziladi. Aks holda facts ichidagi disclaimer matnidan foydalaning.
-- Har bir band alohida paragraf bo'lsin.
-- category_sections ichidagi har bir qiymat (masalan, "2" toifaga tegishli matn) mutlaqo mos ravishda "2. " (yoki "3. ", "4. " va hokazo) prefiksi bilan boshlanishi shart. "2-toifa:", "2) ", "[2] " kabi boshqa formatlar qat'iyan taqiqlanadi!
-- Final observation faqat oldingi bandlarda allaqachon aytilgan nol holatlar yoki anomaly holatlarini qisqa jamlasin.
-- Javob faqat JSON bo'lsin.
+Манба қоидалари:
+- Қуйидаги narrative specification ягона authoritative ҳужжатдир.
+- Фақат FACTS JSON ичидаги маълумотлардан фойдаланинг.
+- Ҳеч қандай сабаб, мотив, сиёсий талқин, яширин тренд ёки етишмаётган фактни ихтиро қилманг.
+- Ҳисоб-китоб қилманг. Барча сонлар ва фоизлар FACTS JSON ичида тайёр берилган.
+- Қўллаб-қувватланмаган майдонлар бўйича даъво қилманг.
+- Қуйидаги сўз ва ибораларни ишлатманг: {", ".join(PROHIBITED_PHRASES)}.
+- Банд 10 ва 11 да тренд фақат trend_status=available бўлса ёзилади. Акс ҳолда facts ичидаги disclaimer матнидан фойдаланинг.
+- Ҳар бир банд алоҳида параграф бўлсин.
+- category_sections ичидаги ҳар бир қиймат (масалан, "2" категорияга тегишли матн) мутлақо мос равишда "2. " (ёки "3. ", "4. " ва ҳоказо) префикси билан бошланиши шарт. "2-категория:", "2) ", "[2] " каби бошқа форматлар қатъиян тақиқланади!
+- Final observation фақат олдинги бандларда аллақачон айтилган ноль ҳолатлар ёки кескин устунлик ҳолатларини қисқа жамласин.
+- Барча матнлар ҚАТЪИЯН Ўзбек Кирилл алифбосида ёзилиши шарт. JSON калитлари ва махсус атамаларни (масалан, инглиз тилидаги статуслар) ўзгаришсиз қолдиринг.
+- Жавоб фақат JSON бўлсин.
 
 AUTHORITATIVE NARRATIVE SPECIFICATION:
 {specification_text}
 
-Qat'iy JSON formati:
+Қатъий JSON формати:
 {{
-  "summary": "1-band mazmunidagi kirish paragrafi",
+  "summary": "1-банд мазмунидаги кириш параграфи",
   "category_sections": {{
-    "2": "2. [Matn faqat '2. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "3": "3. [Matn faqat '3. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "4": "4. [Matn faqat '4. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "5": "5. [Matn faqat '5. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "6": "6. [Matn faqat '6. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "7": "7. [Matn faqat '7. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "8": "8. [Matn faqat '8. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "9": "9. [Matn faqat '9. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "10": "10. [Matn faqat '10. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "11": "11. [Matn faqat '11. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]",
-    "12": "12. [Matn faqat '12. ' prefiksi bilan boshlanishi shart. Boshqa formatlar taqiqlanadi]"
+    "2": "2. [Матн фақат '2. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "3": "3. [Матн фақат '3. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "4": "4. [Матн фақат '4. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "5": "5. [Матн фақат '5. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "6": "6. [Матн фақат '6. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "7": "7. [Матн фақат '7. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "8": "8. [Матн фақат '8. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "9": "9. [Матн фақат '9. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "10": "10. [Матн фақат '10. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "11": "11. [Матн фақат '11. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]",
+    "12": "12. [Матн фақат '12. ' префикси билан бошланиши шарт. Бошқа форматлар тақиқланади]"
   }},
-  "final_heading": "13. Turli masalalar",
+  "final_heading": "13. Турли масалалар",
   "final_observation": "..."
 }}
 """.strip()
@@ -244,7 +245,7 @@ def _build_category_3_facts(aggregated: AggregatedReport) -> dict[str, Any]:
         ),
         "official_anomalies": anomalies,
         "methodology_note": (
-            "3-toifa tarkibida ushbu uch mansabdorning faoliyati bilan birga ularning shaxsan olib borgan 24 ta masala o'rganishlari ham kiradi."
+            "3-категория таркибида ушбу уч мансабдорнинг фаолияти билан бирга уларнинг шахсан олиб борган 24 та масала ўрганишлари ҳам киради."
         ),
     }
 
@@ -350,13 +351,29 @@ def _build_anomalies(aggregated: AggregatedReport) -> list[dict[str, Any]]:
 
 def _build_final_observation_points(aggregated: AggregatedReport, anomalies: list[dict[str, Any]]) -> list[str]:
     points: list[str] = []
+    
     zero_categories = [str(category_id) for category_id in range(2, 13) if aggregated.totals_by_category[category_id] == 0]
     if zero_categories:
-        points.append(f"0 ta holat qayd etilgan toifalar: {', '.join(zero_categories)}")
+        points.append(f"Умумий тизим бўйича 0 та ҳолат қайд этилган категориялар: {', '.join(zero_categories)}")
+
+    for category_id in range(2, 13):
+        if aggregated.totals_by_category.get(category_id, 0) > 0:
+            zero_channels = [
+                stats.council_name
+                for stats in aggregated.channel_stats
+                if stats.category_counts.get(category_id, 0) == 0
+            ]
+            if zero_channels:
+                points.append(f"{category_id}-устун бўйича пост эълон қилмаган (0 та) каналлар: {', '.join(zero_channels)}")
+
     for anomaly in anomalies:
         points.append(
-            f"{anomaly['category_id']}-toifada {anomaly['council_name']} kanali {anomaly['count']} ta post bilan {anomaly['percent']} foiz ulushni egallagan"
+            f"{anomaly['category_id']}-категорияда {anomaly['council_name']} канали {anomaly['count']} та пост билан {anomaly['percent']} фоиз улушни эгаллаган"
         )
+        
+    if getattr(aggregated, 'madad_channels', None):
+        points.append(f"«Мадад» ННТ билан ҳамкорликда учрашув ёки маслаҳат ташкил этилгани тўғрисида пост эълон қилган каналлар: {', '.join(aggregated.madad_channels)}")
+        
     return points
 
 

@@ -25,6 +25,8 @@ Har bir kategoriya uchun yozilgan izoh albatta quyidagi 4 ta qismdan iborat bo'l
 
 **2-band (Repost / bog'liq bo'lmagan postlar):** Sonni **foiz bilan birga** bering ("X ta (Y%)"). Qaysi hududlarda ko'proq uchragani va **mavzusini** (masalan: siyosiy tashabbuslar, umumiy tabriklar) tasvirlang. Agar biror hudud/tumanlarda repost **umuman kuzatilmagan** bo'lsa (0%), buni ijobiy holat sifatida alohida ta'kidlang. Barcha nol ko'rsatkichli hududlarni to'liq sanang, yoki umumlashtirib ayting ("15 ta kanaldan 14 tasida repost umuman kuzatilmagan, faqat X kanalida Y ta uchragan").
 
+**Masalan:** "Кенгаш фаолиятига бевосита боғлиқ бўлмаган 10 та пост кузатилган. Хусусан, Янги Наманган, Чортоқ, Мингбулоқ ва Давлатобод тумани Кенгашлари каналида сувни ифлослантириш бўйича жавобгарлик мавжудлиги, болани давлат боғчаларига қўйишдаги имтиёзлар  тўғрисида, Уйчи тумани Кенгаши каналида ту-илган кун табриги, Уйчи, Чортоқ ва Янгиқўрғон тумани Кенгашлари каналида Матбуот ва оммавий ахборот воситалари ходимлари куни муносабати билан байрам табриги тўғрисидаги постлар эълон қилинган."
+
 **3-band (Rahbariyat faoliyati):** Hokim, Kengash raisi va kotibiyat mudirini **HAR BIRINI ALOHIDA** tahlil qiling (hech qachon uchalasini bitta raqam qilib qo'shmang).
 - Har biri uchun qaysi kanallarda yoritilganini to'liq ro'yxat qiling (vergul bilan).
 - Qaysi hududlarda **hech biri** yoritilmagan bo'lsa, alohida ko'rsating.
@@ -53,7 +55,10 @@ Har bir kategoriya uchun yozilgan izoh albatta quyidagi 4 ta qismdan iborat bo'l
 6. `other` — yuqoridagi 5 ta toifaga kirmaydigan boshqa barcha postlar.
 
 ## 4. TURLI MASALALAR (Erkin band)
-Bu yerga jadvalning boshqa ustunlariga sig'maydigan, lekin e'tiborga molik **noyob holatlar**ni yozing (masalan: bitta kanalning g'ayrioddiy yuqori/past faolligi, tashqi tashkilot bilan hamkorlik, metodik yordam tashrifi va h.k.). Faqat "Madad" NNT haqida bitta jumla bor. Bu band aslida jadvalning boshqa ustunlariga sig'maydigan har qanday noyob holat uchun mo'ljallangan (masalan: bitta kanalning g'ayrioddiy yuqori/past faolligi, tashqi tashkilot bilan hamkorlik, metodik-uslubiy tashrif va h.k.) - uni faqat "Madad" bilan cheklamaslik kerak. Qaysi mahalliy Kengash kanallarida "Madad" NNT bilan hamkorlikda tashkil etilgan ishlar тўғрисида postlar e'lon qilingan bo'lsa o'shalarni kiritish kerak.
+Bu yerga jadvalning boshqa ustunlariga sig'maydigan, lekin e'tiborga molik **noyob holatlar**ni yozing (masalan: bitta kanalning g'ayrioddiy yuqori/past faolligi, tashqi tashkilot bilan hamkorlik, metodik yordam tashrifi va h.k.). Faqat "Madad" NNT haqida bitta jumla bor. Bu band aslida jadvalning boshqa ustunlariga sig'maydigan har qanday noyob holat uchun mo'ljallangan (masalan: bitta kanalning g'ayrioddiy yuqori/past faolligi, tashqi tashkilot bilan hamkorlik, metodik-uslubiy tashrif va h.k.) - uni faqat "Madad" bilan cheklamaslik kerak. Qaysi mahalliy Kengash kanallarida "Madad" NNT bilan hamkorlikda tashkil etilgan ishlar тўғрисида postlar e'lon qilingan bo'lsa o'shalarni kiritish kerak. 
+
+**Masalan:** "Наманган, Поп, Чортоқ, Янгиқўрғон туман Кенгаши каналларида “Мадад” ННТ билан ҳамкорликда учрашув ташкил этилиб, маслаҳат ва тушунтиришлар берилгани тўғрисида постлар эълон қилинган.
+Шунингдек, мазкур ҳафта давомида қуйидаги ҳолатлар кузатилди: 2-устунда Мингбулоқ тумани Кенгаши канали 3 та пост билан 75 фоиз улушни эгаллаган бўлса, 8-устунда Чортоқ туман Кенгаши канали 4 та пост билан 57 фоиз улушни эгаллаган. Бироқ, 3-устун ва 5-устун бўйича Тўрақўрғон тумани Кенгаши канали, 6-устун  бўйича Мингбулоқ, Тўрақўрғон, Уйчи ва Янги Наманган тумани Кенгаш каналлари, 7-устун бўйича Давлатобод, Косонсой, Мингбулоқ, Норин, Учқўрғон ва Чуст тумани Кенгаши каналлари, 9-устун бўйича Давлатобод, Мингбулоқ, Норин, Поп, Тўрақўрғон ва Янги Наманган тумани Кенгаш каналлари томонидан пост эълон қилинмаган."
 
 ## 5. USLUBIY QOIDALAR (Yakuniy)
 - Har doim **aniq raqam + aniq nom** birga keladi. Noaniq ifodalar ("ko'p hududlarda", "ba'zi kanallarda") ishlatilmaydi.

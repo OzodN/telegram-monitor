@@ -9,31 +9,30 @@ from src.narrative_generator import build_narrative_facts
 
 
 PROHIBITED_PHRASES = (
-    "ehtimol",
-    "aftidan",
-    "ko'rinishicha",
-    "ko‘rinishicha",
-    "bu shundan dalolat beradi",
-    "sababi shuki",
+    "эҳтимол",
+    "афтидан",
+    "кўринишича",
+    "бу шундан далолат беради",
+    "сабаби шуки",
+    "аномалия",
 )
 TREND_PATTERNS = (
-    "nisbatan",
-    "taqqoslaganda",
-    "solishtirganda",
-    "oshdi",
-    "kamaydi",
-    "ko'paydi",
-    "ko‘paydi",
-    "pasaydi",
-    "yaxshilandi",
-    "yomonlashdi",
+    "нисбатан",
+    "таққослаганда",
+    "солиштирганда",
+    "ошди",
+    "камайди",
+    "кўпайди",
+    "пасайди",
+    "яхшиланди",
+    "ёмонлашди",
 )
 
 
 def normalize_section_prefix(text: str, category_id: int) -> str:
     cleaned = text.strip()
-    # Matches Category X-, X. , X) , [X] , X: , X-toifa
-    pattern = r"^(?:Category\s+)?(?:" + str(category_id) + r")\s*[-).\]:]\s*|^(?:" + str(category_id) + r")-toifa\s*"
+    # Matches Category X-, X. , X) , [X] , X: , X-toifa, X-kategoriya
+    pattern = r"^(?:Category\s+)?(?:" + str(category_id) + r")\s*[-).\]:]\s*|^(?:" + str(category_id) + r")-(?:toifa|тоифа|kategoriya|категория)\s*"
     if re.match(pattern, cleaned, re.IGNORECASE):
         cleaned = re.sub(pattern, "", cleaned, count=1).strip()
     return f"{category_id}. {cleaned}"
@@ -75,8 +74,8 @@ def validate_narrative(narrative: ReportNarrative, aggregated: AggregatedReport,
 
     # Heal final heading in-place
     cleaned_heading = narrative.final_heading.strip()
-    if len(cleaned_heading) < 50 and re.search(r"13|turli|masalalar", cleaned_heading, re.IGNORECASE):
-        narrative.final_heading = "13. Turli masalalar"
+    if len(cleaned_heading) < 50 and re.search(r"13|турли|масалалар|turli|masalalar", cleaned_heading, re.IGNORECASE):
+        narrative.final_heading = "13. Турли масалалар"
 
     errors: list[str] = []
     warnings: list[str] = []
@@ -107,8 +106,8 @@ def validate_narrative(narrative: ReportNarrative, aggregated: AggregatedReport,
         if not section_text.startswith(prefix):
             errors.append(f"Category {category_id} section must start with '{prefix}'")
 
-    if narrative.final_heading.strip() != "13. Turli masalalar":
-        errors.append(f"Final heading must be exactly '13. Turli masalalar', but got: '{narrative.final_heading}'")
+    if narrative.final_heading.strip() != "13. Турли масалалар":
+        errors.append(f"Final heading must be exactly '13. Турли масалалар', but got: '{narrative.final_heading}'")
 
     allowed_numbers = _build_allowed_numbers(aggregated, paths)
     observed_numbers = re.findall(r"\d+", all_text)

@@ -47,15 +47,21 @@ gemini:
     # - GEMINI_API_KEY_7
     # - GEMINI_API_KEY_8
     # - GEMINI_API_KEY_9
-    - GEMINI_API_KEY_10
-    - GEMINI_API_KEY_11
-    - GEMINI_API_KEY_12
-    - GEMINI_API_KEY_13
-    - GEMINI_API_KEY_14
-    - GEMINI_API_KEY_15
+    # - GEMINI_API_KEY_10
+    # - GEMINI_API_KEY_11
+    # - GEMINI_API_KEY_12
+    # - GEMINI_API_KEY_13
+    # - GEMINI_API_KEY_14
+    # - GEMINI_API_KEY_15
     - GEMINI_API_KEY_16
     - GEMINI_API_KEY_17
     - GEMINI_API_KEY_18
+    - GEMINI_API_KEY_19
+    - GEMINI_API_KEY_20
+    - GEMINI_API_KEY_21
+    - GEMINI_API_KEY_22
+    - GEMINI_API_KEY_23
+    - GEMINI_API_KEY_24
   model: gemini-3.5-flash
   request_timeout_seconds: 360
   temperature: 0

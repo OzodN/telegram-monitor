@@ -62,7 +62,7 @@ gemini:
     - GEMINI_API_KEY_22
     - GEMINI_API_KEY_23
     - GEMINI_API_KEY_24
-  model: gemini-3.5-flash
+  model: gemini-3.6-flash
   request_timeout_seconds: 360
   temperature: 0
 

@@ -57,13 +57,13 @@ async def _ensure_authorized(client: TelegramClient, session_name: str) -> None:
     logger.info("Telegram QR avtorizatsiyasi boshlanmoqda.")
 
     while True:
-        qr_login = await client.qr_login()
-        qr_path = _save_qr_code(qr_login.url, session_name)
-        print("Telegram ilovasida Settings > Devices > Link Desktop Device orqali quyidagi QR-kodni skaner qiling:")
-        print(qr_path)
-        print(qr_login.url)
-
         try:
+            qr_login = await client.qr_login()
+            qr_path = _save_qr_code(qr_login.url, session_name)
+            print("Telegram ilovasida Settings > Devices > Link Desktop Device orqali quyidagi QR-kodni skaner qiling:")
+            print(qr_path)
+            print(qr_login.url)
+
             await qr_login.wait()
             return
         except asyncio.TimeoutError:

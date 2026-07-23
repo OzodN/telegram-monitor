@@ -1,7 +1,7 @@
 # Classification Architecture
 
 - **Classification source of truth**
-  - Sole authoritative taxonomy: `references/classification_specification_v2.md`
+  - Sole authoritative taxonomy: `references/classification_specification_v4.md`
   - It supersedes prior category instruction documents.
   - It defines:
     - assignable categories
@@ -28,7 +28,7 @@
   2. Extract and canonicalize the 24-issues dataset.
   3. Extract and canonicalize the 162-laws dataset.
   4. Split Telegram posts into Gemini classification batches.
-  5. Send each batch to Gemini with:
+  5. Send each batch to Gemini using the System Instruction pattern to separate the specification from the dynamic payload:
      - post text
      - authoritative classification specification
      - canonical issue catalog
@@ -86,7 +86,7 @@
     - `corrected`
 
 - **Classification source-of-truth hierarchy**
-  1. `classification_specification_v2.md`
+  1. `classification_specification_v4.md`
   2. Canonical issue and law catalogs as support datasets
   3. Deterministic validation rules
   4. Audit pass over the same taxonomy

@@ -48,3 +48,6 @@
     2. **TTY Timeframe Selection Prompt:** Injected an interactive CLI prompt at `main.py` startup for user week selection (Joriy hafta / O'tgan hafta) with automated non-TTY fallback and interrupt handling.
     3. **In-place Prefix Healing:** Upgraded `validate_narrative` to auto-heal section formatting prefixes in-place instead of throwing destructive ValueErrors.
     4. **Verified Compilation:** Statically compiled all source files successfully.
+    5. **System Instruction Pattern**: Transitioned Classification, Audit, and Narrative Gemini API calls to use the `system_instruction` parameter to strictly separate system rules (the specs) from user payloads.
+    6. **Classification Spec Gestalt Cleanup**: Updated classification spec to version 4, removing confusing internal backend-only instructions and loose Appendix references to permanently resolve LLM hallucinations.
+    7. **Narrative Section 13 (Turli masalalar) Fix**: Enriched `AggregatedReport` and `final_observation_points` to explicitly pass Madad NNT channels and per-column zero-post channels to Gemini, fixing sparse LLM observations.

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import copy
 
 from docx import Document
 from docx.enum.section import WD_ORIENT
@@ -99,7 +100,22 @@ def _fill_header_block(document: Document, aggregated: AggregatedReport) -> None
     _set_paragraph_text(document.paragraphs[NOTE_TITLE_INDEX], "Изоҳ:", bold=True, font_size=12)
 
 
+def _ensure_table_rows(table, required_channel_count: int) -> None:
+    current_channel_count = len(table.rows) - 3
+    if current_channel_count < required_channel_count:
+        for _ in range(required_channel_count - current_channel_count):
+            source_tr = table.rows[-2]._tr
+            new_tr = copy.deepcopy(source_tr)
+            table.rows[-1]._tr.addprevious(new_tr)
+    elif current_channel_count > required_channel_count:
+        for _ in range(current_channel_count - required_channel_count):
+            row_to_delete = table.rows[-2]
+            row_to_delete._element.getparent().remove(row_to_delete._element)
+
+
 def _fill_table(table, aggregated: AggregatedReport) -> None:
+    _ensure_table_rows(table, len(aggregated.channel_stats))
+    
     for row_index, stats in enumerate(aggregated.channel_stats, start=2):
         row = table.rows[row_index]
         values = [
@@ -122,7 +138,7 @@ def _fill_table(table, aggregated: AggregatedReport) -> None:
         ]
         _fill_row(row, values)
 
-    totals_row = table.rows[len(aggregated.channel_stats) + 2]
+    totals_row = table.rows[-1]
     totals = aggregated.totals_by_category
     total_values = [
         "Жами",

@@ -16,6 +16,7 @@ class TelegramConfig:
     api_id: int
     api_hash: str
     session_name: str
+    region_name: str
     channels: list[ChannelConfig]
 
 
@@ -160,6 +161,7 @@ class AggregatedReport:
     overall_average_views: int = 0
     overall_total_views: int = 0
     overall_viewed_posts_count: int = 0
+    region_name: str = "Наманган вилояти"
     current_spec_version: str = ""
     prior_period_reference: dict | None = None
     flagged_anomalies: list[dict] = field(default_factory=list)
@@ -184,6 +186,7 @@ class AggregatedReport:
             "prior_period_reference": self.prior_period_reference,
             "flagged_anomalies": self.flagged_anomalies,
             "madad_channels": self.madad_channels,
+            "region_name": self.region_name,
         }
 
 

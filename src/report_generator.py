@@ -71,7 +71,7 @@ def _fill_header_block(document: Document, aggregated: AggregatedReport) -> None
     _set_paragraph_text(document.paragraphs[1], report_date, bold=True, font_size=12)
     _set_paragraph_text(
         document.paragraphs[TITLE_LINE_1_INDEX],
-        "Халқ депутатлари Наманган вилояти, туман ва шаҳар Кенгашларининг расмий телеграм каналларида",
+        f"Халқ депутатлари {aggregated.region_name}, туман ва шаҳар Кенгашларининг расмий телеграм каналларида",
         bold=True,
         font_size=12,
         alignment=WD_ALIGN_PARAGRAPH.CENTER,

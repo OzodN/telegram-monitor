@@ -35,6 +35,7 @@ def load_app_config(config_path: Path) -> AppConfig:
             api_id=api_id,
             api_hash=_resolve_config_value(telegram, "api_hash", "api_hash_env"),
             session_name=telegram["session_name"],
+            region_name=telegram.get("region_name", "Наманган вилояти"),
             channels=[
                 ChannelConfig(
                     council_name=item["council_name"],

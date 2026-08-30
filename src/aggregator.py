@@ -17,6 +17,7 @@ def aggregate_report_data(
     channels: list[ChannelConfig],
     period: ReportPeriod,
     reference_data: ClassificationReferenceData,
+    region_name: str = "Наманган вилояти",
 ) -> AggregatedReport:
     madad_councils = set()
     for cp in classified_posts:
@@ -86,6 +87,7 @@ def aggregate_report_data(
         prior_period_reference=None,
         flagged_anomalies=[],
         madad_channels=sorted(madad_councils),
+        region_name=region_name,
     )
     _assert_aggregation_identity(aggregated_report)
     return aggregated_report

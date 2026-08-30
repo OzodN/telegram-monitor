@@ -89,6 +89,7 @@ def main() -> None:
         channels=config.telegram.channels,
         period=period,
         reference_data=reference_data,
+        region_name=config.telegram.region_name,
     )
     write_json(run_dirs.aggregated_stats_path, aggregated.to_dict())
 

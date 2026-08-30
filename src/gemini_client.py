@@ -125,6 +125,8 @@ class GeminiClient:
         config = dict(request_config)
         if response_schema is not None:
             config["response_schema"] = response_schema
+            
+        config["automatic_function_calling"] = {"disable": True}
 
         return self._generate_with_retry(
             contents=contents,
@@ -151,6 +153,7 @@ class GeminiClient:
             
             for attempt in range(1, self._config.retry_attempts + 1):
                 try:
+                    logger.info(f"Sending Gemini request for '{operation_name}' (attempt {attempt})...")
                     response = client.models.generate_content(
                         model=self._config.model,
                         contents=contents,

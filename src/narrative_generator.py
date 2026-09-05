@@ -198,6 +198,8 @@ def _build_category_band_facts(aggregated: AggregatedReport, category_id: int) -
         band.update(_build_category_5_facts(aggregated))
     elif category_id == 6:
         band.update(_build_category_6_facts(aggregated))
+    elif category_id == 7:
+        band.update(_build_category_7_facts(aggregated))
     elif category_id in TREND_CATEGORIES:
         band.update(_build_trend_facts(aggregated))
     elif category_id == 12:
@@ -304,6 +306,27 @@ def _build_category_6_facts(aggregated: AggregatedReport) -> dict[str, Any]:
     return {
         "laws_supported": bool(counter),
         "top_laws": [{"law": law, "count": count} for law, count in counter.most_common(5)],
+    }
+
+
+def _build_category_7_facts(aggregated: AggregatedReport) -> dict[str, Any]:
+    counter: Counter[str] = Counter()
+    for stats in aggregated.channel_stats:
+        counter.update(stats.category_7_by_power)
+
+    channel_powers = [
+        {
+            "council_name": stats.council_name,
+            "powers": list(stats.category_7_by_power.keys()),
+        }
+        for stats in aggregated.channel_stats
+        if stats.category_7_by_power
+    ]
+
+    return {
+        "powers_supported": bool(counter),
+        "top_powers": [{"power": power, "count": count} for power, count in counter.most_common(5)],
+        "channel_powers": channel_powers,
     }
 
 

@@ -67,6 +67,7 @@ def aggregate_report_data(
                 category_5_by_subtype=_count_category_5_subtypes(posts),
                 category_5_by_problem_type=_count_category_5_problem_types(posts),
                 category_6_by_law=_count_category_6_laws(posts, reference_data),
+                category_7_by_power=_count_category_7_powers(posts),
                 category_12_by_subtype=_count_category_12_subtypes(posts),
             )
         )
@@ -186,6 +187,14 @@ def _count_category_6_laws(
             law_name = law_entry.title if law_entry is not None else reference.reference_id
             counts[law_name] = counts.get(law_name, 0) + 1
     return dict(sorted(counts.items()))
+
+def _count_category_7_powers(posts: list[ClassifiedPost]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for item in posts:
+        if item.category_id != 7 or not item.category_7_power:
+            continue
+        counts[item.category_7_power] = counts.get(item.category_7_power, 0) + 1
+    return counts
 
 
 def _count_category_12_subtypes(posts: list[ClassifiedPost]) -> dict[str, int]:

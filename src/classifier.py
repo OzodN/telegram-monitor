@@ -43,6 +43,7 @@ class ClassificationDecisionSchema(TypedDict):
     category_5_subtype: str | None
     category_5_problem_type: str | None
     category_12_subtype: str | None
+    category_7_power: str | None
 
 logger = logging.getLogger(__name__)
 MAX_POST_TEXT_CHARS = 1600
@@ -250,6 +251,12 @@ def _classify_batch(
                 raw_decision=decision,
             )
 
+            cat_7_pow = decision.get("category_7_power")
+            if cat_7_pow is not None:
+                cat_7_pow = str(cat_7_pow).strip()
+                if not cat_7_pow or category_id != 7:
+                    cat_7_pow = None
+
             classified.append(
                 ClassifiedPost(
                     post=post,
@@ -263,6 +270,7 @@ def _classify_batch(
                     category_5_subtype=cat_5_sub,
                     category_5_problem_type=cat_5_prob,
                     category_12_subtype=cat_12_sub,
+                    category_7_power=cat_7_pow,
                 )
             )
         total_batch_seconds = time.perf_counter() - batch_started_at
@@ -316,7 +324,8 @@ Required JSON format:
     "category_3_official": null,
     "category_5_subtype": null,
     "category_5_problem_type": null,
-    "category_12_subtype": null
+    "category_12_subtype": null,
+    "category_7_power": null
   }}
 ]
 
@@ -331,6 +340,18 @@ Rules:
 - For category 5, category_5_problem_type must be one of: road, water, gas, electricity, social, other.
 - For category 6, include at least one laws_162 canonical law ID from the catalog below.
 - For category 12, category_12_subtype must be one of: template, legislative_news, internal_organizational, press_article, other.
+- For category 7, ONLY AFTER evaluating Category 7 based on the specification, select one of the following powers for category_7_power:
+    - "power_1_drafts" (Кенгаш қарорлари лойиҳаларини ишлаб чиқиш)
+    - "power_2_programs" (Ҳудудий дастурларни ишлаб чиқиш ва амалга оширишда иштирок этиш)
+    - "power_3_review" (Қарорлар лойиҳаларини дастлабки кўриб чиқиш ва сессияга тайёрлаш)
+    - "power_4_conclusions" (Қарорлар лойиҳалари юзасидан хулосалар бериш)
+    - "power_5_budget" (Маҳаллий бюджет лойиҳалари юзасидан хулоса ва таклифлар бериш)
+    - "power_6_budget_control" (Бюджет маблағларининг мақсадли сарфланиши ва самарали фойдаланилишини ўрганиш)
+    - "power_7_working_groups" (Ишчи гуруҳлар тузиш / мутахассис ва олимларни жалб этиш)
+    - "power_8_expert_info" (Давлат органлари ва мансабдор шахслардан ахборот ва эксперт хулосаларини талаб қилиб олиш)
+    - "power_9_execution" (Қонун ҳужжатлари ва Кенгаш қарорларининг ижро этилиш ҳолатини жойларга чиққан ҳолда ўрганиш)
+    - "power_10_promotion" (Норматив-ҳуқуқий ҳужжатлар ва Кенгаш қарорларини тарғиб этиш)
+    - "power_unspecified" (If vague, missing, or multiple)
 - For categories without dataset support, return an empty dataset_references list.
 - For categories where an extra field does not apply, return null for that field.
 - reference_id values must be catalog IDs such as ISSUE_03 or LAW_URQ_445, not free-form titles.

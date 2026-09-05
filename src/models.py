@@ -109,6 +109,7 @@ class ClassifiedPost:
     category_5_subtype: str | None = None
     category_5_problem_type: str | None = None
     category_12_subtype: str | None = None
+    category_7_power: str | None = None
     audit_status: str | None = None
     audit_notes: str | None = None
 
@@ -125,6 +126,7 @@ class ClassifiedPost:
             "category_5_subtype": self.category_5_subtype,
             "category_5_problem_type": self.category_5_problem_type,
             "category_12_subtype": self.category_12_subtype,
+            "category_7_power": self.category_7_power,
             "audit_status": self.audit_status,
             "audit_notes": self.audit_notes,
         }
@@ -146,6 +148,7 @@ class ChannelStats:
     category_5_by_subtype: dict[str, int] = field(default_factory=dict)
     category_5_by_problem_type: dict[str, int] = field(default_factory=dict)
     category_6_by_law: dict[str, int] = field(default_factory=dict)
+    category_7_by_power: dict[str, int] = field(default_factory=dict)
     category_12_by_subtype: dict[str, int] = field(default_factory=dict)
 
     def __post_init__(self) -> None:

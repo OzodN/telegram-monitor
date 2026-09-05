@@ -255,12 +255,22 @@ def _build_category_4_facts(aggregated: AggregatedReport) -> dict[str, Any]:
     for stats in aggregated.channel_stats:
         counter.update(stats.category_4_by_issue)
 
+    channel_issues = [
+        {
+            "council_name": stats.council_name,
+            "issues": list(stats.category_4_by_issue.keys()),
+        }
+        for stats in aggregated.channel_stats
+        if stats.category_4_by_issue
+    ]
+
     return {
         "issues_supported": bool(counter),
         "top_issues": [
             {"issue": issue, "count": count}
             for issue, count in counter.most_common(5)
         ],
+        "channel_issues": channel_issues,
     }
 
 

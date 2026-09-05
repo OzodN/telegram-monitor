@@ -4,6 +4,7 @@ telegram:
   api_id_env: TELEGRAM_API_ID
   api_hash_env: TELEGRAM_API_HASH
   session_name: telegram_monitor
+  region_name: "Наманган вилояти"
   channels:
     - council_name: Наманган вилояти
       telegram_url: https://t.me/Namanganviloyatikengashi
@@ -38,31 +39,31 @@ telegram:
 
 gemini:
   api_keys:
-    # - GEMINI_API_KEY_1
-    # - GEMINI_API_KEY_2
-    # - GEMINI_API_KEY_3
+    - GEMINI_API_KEY_1
+    - GEMINI_API_KEY_2
+    - GEMINI_API_KEY_3
     # - GEMINI_API_KEY_4
     # - GEMINI_API_KEY_5
     # - GEMINI_API_KEY_6
     # - GEMINI_API_KEY_7
     # - GEMINI_API_KEY_8
     # - GEMINI_API_KEY_9
-    # - GEMINI_API_KEY_10
-    # - GEMINI_API_KEY_11
-    # - GEMINI_API_KEY_12
+    - GEMINI_API_KEY_10
+    - GEMINI_API_KEY_11
+    - GEMINI_API_KEY_12
     # - GEMINI_API_KEY_13
     # - GEMINI_API_KEY_14
     # - GEMINI_API_KEY_15
-    - GEMINI_API_KEY_16
-    - GEMINI_API_KEY_17
-    - GEMINI_API_KEY_18
-    - GEMINI_API_KEY_19
-    - GEMINI_API_KEY_20
-    - GEMINI_API_KEY_21
-    - GEMINI_API_KEY_22
-    - GEMINI_API_KEY_23
-    - GEMINI_API_KEY_24
-  model: gemini-3.6-flash
+    # - GEMINI_API_KEY_16
+    # - GEMINI_API_KEY_17
+    # - GEMINI_API_KEY_18
+    # - GEMINI_API_KEY_19
+    # - GEMINI_API_KEY_20
+    # - GEMINI_API_KEY_21
+    # - GEMINI_API_KEY_22
+    # - GEMINI_API_KEY_23
+    # - GEMINI_API_KEY_24
+  model: gemini-3.7-flash
   request_timeout_seconds: 360
   temperature: 0
 

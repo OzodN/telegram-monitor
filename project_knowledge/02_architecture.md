@@ -41,6 +41,7 @@
       - period-bounded post extraction
       - subscriber/view collection
       - exclusion of posts without usable text
+      - extraction of text from standard messages and nested `RichMessage` structures (albums, native articles)
   - **AI classification layer**
     - `classifier`
     - Input: raw Telegram posts

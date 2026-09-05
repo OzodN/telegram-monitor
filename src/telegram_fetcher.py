@@ -132,8 +132,41 @@ async def _fetch_channel_posts(
     return list(reversed(posts))
 
 
+def _extract_rich_text(obj) -> str:
+    if isinstance(obj, str):
+        return obj
+    if isinstance(obj, dict):
+        parts = []
+        if "text" in obj and obj.get("_", "").startswith("Text"):
+            parts.append(_extract_rich_text(obj["text"]))
+        elif "text" in obj:
+            parts.append(_extract_rich_text(obj["text"]))
+        
+        if "texts" in obj:
+            parts.append("".join(_extract_rich_text(t) for t in obj["texts"]))
+            
+        if "blocks" in obj:
+            for b in obj["blocks"]:
+                parts.append(_extract_rich_text(b))
+                parts.append("\n")
+                
+        return "".join(parts)
+    if isinstance(obj, list):
+        return "".join(_extract_rich_text(i) for i in obj)
+    return ""
+
+
 def _message_to_post(council_name: str, channel_url: str, subscriber_count: int | None, message) -> TelegramPost | None:
     text = (message.message or "").strip()
+    
+    # Extract from rich_message if present (for albums, long formatted posts)
+    if not text and getattr(message, "rich_message", None):
+        try:
+            rm_dict = message.rich_message.to_dict()
+            text = _extract_rich_text(rm_dict).strip()
+        except Exception:
+            pass
+
     has_media = bool(message.media)
 
     if has_media and not text:

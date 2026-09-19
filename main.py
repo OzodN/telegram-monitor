@@ -93,8 +93,20 @@ def main() -> None:
     )
     write_json(run_dirs.aggregated_stats_path, aggregated.to_dict())
 
-    narrative = generate_narrative(audited_posts, aggregated, config.gemini, config.paths, gemini_client)
-    narrative_validation_report = validate_narrative(narrative, aggregated, config.paths)
+    max_narrative_attempts = 5
+    for attempt in range(1, max_narrative_attempts + 1):
+        try:
+            logger.info("Generating narrative (attempt %s/%s)...", attempt, max_narrative_attempts)
+            narrative = generate_narrative(audited_posts, aggregated, config.gemini, config.paths, gemini_client)
+            narrative_validation_report = validate_narrative(narrative, aggregated, config.paths)
+            logger.info("Narrative generation and validation successful on attempt %s.", attempt)
+            break
+        except Exception as e:
+            logger.warning("Narrative generation/validation failed on attempt %s: %s", attempt, e)
+            if attempt == max_narrative_attempts:
+                logger.error("Max narrative generation attempts reached. Aborting.")
+                raise e
+
     write_json(run_dirs.narrative_path, narrative.to_dict())
     write_json(run_dirs.narrative_validation_path, narrative_validation_report)
 

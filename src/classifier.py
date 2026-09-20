@@ -67,8 +67,13 @@ def classify_posts(
     batches = list(chunked(posts, config.classification_batch_size))
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(config.api_keys)) as executor:
-        futures = [
-            executor.submit(
+        futures = []
+        for batch_index, batch in enumerate(batches, start=1):
+            if batch_index > 1:
+                logger.info("Staggering request: waiting 15 seconds before dispatching classification batch %s...", batch_index)
+                time.sleep(15)
+            
+            future = executor.submit(
                 _classify_batch,
                 gemini_client,
                 config,
@@ -76,8 +81,7 @@ def classify_posts(
                 batch_index,
                 reference_data,
             )
-            for batch_index, batch in enumerate(batches, start=1)
-        ]
+            futures.append(future)
 
         for batch_index, future in enumerate(futures, start=1):
             batch_result = future.result()

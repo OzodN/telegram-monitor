@@ -62,8 +62,13 @@ def audit_classified_posts(
     batches = list(chunked(classified_posts, config.classification_batch_size))
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(config.api_keys)) as executor:
-        futures = [
-            executor.submit(
+        futures = []
+        for batch_index, batch in enumerate(batches, start=1):
+            if batch_index > 1:
+                logger.info("Staggering request: waiting 15 seconds before dispatching audit batch %s...", batch_index)
+                time.sleep(15)
+            
+            future = executor.submit(
                 _audit_batch,
                 batch,
                 batch_index,
@@ -71,8 +76,7 @@ def audit_classified_posts(
                 reference_data,
                 gemini_client,
             )
-            for batch_index, batch in enumerate(batches, start=1)
-        ]
+            futures.append(future)
 
         for batch_index, future in enumerate(futures, start=1):
             batch_result = future.result()
